@@ -8,7 +8,6 @@ if(data){
 	data = [];
 }
 function appendLi(item){
-	data.push(val);
 	li.innerText = item;
 	list.appendChild(li);
 }
@@ -18,6 +17,7 @@ data.forEach(item => {
 btn.onclick = function(){
 	let val = txt.value;
 	if(!val.trim()) return;
+	data.push(val);
 	localStorage.data = JSON.stringify(data);
 	let li = document.createElement('li');
 	appendLi(val);
