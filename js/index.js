@@ -16,8 +16,8 @@ data.forEach(item => {
 	appendLi(item);
 })
 btn.onclick = function(){
-	if(!item.trim()) return;
 	let val = txt.value;
+	if(!val.trim()) return;
 	localStorage.data = JSON.stringify(data);
 	let li = document.createElement('li');
 	appendLi(val);
