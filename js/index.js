@@ -7,17 +7,18 @@ if(data){
 }else{
 	data = [];
 }
-let str = '';
+function appendLi(item){
+	let li = document.createElement('li');
+	li.innerText = item;
+	list.appendChild(li);
+}
 data.forEach(item => {
-	str += '<li>'+item+'</li>';
+	appendLi(item);
 })
-list.innerHTML = str;
 btn.onclick = function(){
 	let val = txt.value;
 	data.push(val);
-	console.log(data);
 	localStorage.data = JSON.stringify(data);
-	let str = '<li>'+val+'</li>';
-	list.innerHTML += str;
+	appendLi(val);
 	txt.value = '';
 }
