@@ -8,6 +8,7 @@ if(data){
 	data = [];
 }
 function appendLi(item){
+	let li = document.createElement('li');
 	li.innerText = item;
 	list.appendChild(li);
 }
@@ -19,7 +20,6 @@ btn.onclick = function(){
 	if(!val.trim()) return;
 	data.push(val);
 	localStorage.data = JSON.stringify(data);
-	let li = document.createElement('li');
 	appendLi(val);
 	txt.value = '';
 }
