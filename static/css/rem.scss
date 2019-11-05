@@ -1,0 +1,4 @@
+$baseFontSize = 16; //默认基准font-size
+rem(px){
+  return  px / $baseFontSize * 1rem;
+}
