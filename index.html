@@ -22,12 +22,6 @@
 			video{
 				display: block;
 				margin: 0 auto;
-				width: 800px;
-			}
-			@media (max-width:800px) {
-				.wrap video{
-					width: 100vw;
-				}
 			}
 		</style>
 	</head>
@@ -52,4 +46,33 @@
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript">
+		let video = document.getElementsByTagName('video')[0];
+		function client(){
+			if(window.innerHeight !== undefined){
+				return {
+					"width": window.innerWidth,
+					"height": window.innerHeight
+				}
+			}else if(document.compatMode === "CSS1Compat"){
+				return {
+					"width": document.documentElement.clientWidth,
+					"height": document.documentElement.clientHeight
+				}
+			}else{
+				return {
+					"width": document.body.clientWidth,
+					"height": document.body.clientHeight
+				}
+			}
+		}
+		
+		
+		let w = client().width;
+		if(w>=800){
+			video.style.width = 800+'px';
+		}else{
+			video.style.width = 100+'%';
+		}
+	</script>
 </html>
