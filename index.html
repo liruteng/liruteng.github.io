@@ -68,11 +68,13 @@
 		}
 		
 		
-		let w = client().width;
-		if(w>=800){
-			video.style.width = 800+'px';
-		}else{
-			video.style.width = 100+'%';
+		window.onresize = function(){
+			let w = client().width;
+			if(w>=800){
+				video.style.width = 800+'px';
+			}else{
+				video.style.width = 100+'%';
+			}
 		}
 	</script>
 </html>
