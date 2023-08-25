@@ -94,9 +94,6 @@
             background:#fff6f7;
             border-radius: .1rem;
         }
-        .first,.advantage-first{
-            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.16);
-        }
         .function-name,.advantage-name{
             display: flex;
             align-items: center;
@@ -134,10 +131,6 @@
             padding: .34rem .58rem .3rem;
             background:#fff6f7;
             /* border-radius: .1rem; */
-        }
-        .advantage-content .advantage-first{
-            background-image: url(./图片/AI数字人主播/2.png);
-            background-size: 100% 100%;
         }
         .advantage-text{
             margin-top: .1rem;
@@ -269,8 +262,15 @@
         .function-content>div.active .function-name{
             color: #0045d9;
         }
+        .function-content>div.active{
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.16);
+        }
         .advantage-content>div.active .advantage-name{
             color: #db1717;
+        }
+        .advantage-content>div.active{
+            background-image: url(./图片/AI数字人主播/2.png);
+            background-size: 100% 100%;
         }
         .scene-content>div.active .scene-name{
             color: #db1717;
@@ -281,7 +281,9 @@
     <div class="view">
         <div class="header">
             <div class="header-left">
-                <img src="./图片/AIGC智能工坊/logo@2x.png" alt="">
+                <a href="./index.html">
+                    <img src="./图片/AIGC智能工坊/logo@2x.png" alt="">
+                </a>
             </div>
             <div class="header-right">
                 <a href="./index.html">

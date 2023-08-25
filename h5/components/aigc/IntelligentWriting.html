@@ -73,71 +73,52 @@
         }
         .function{
             width: 100%;
-            min-height: 7.54rem;
-            box-sizing: border-box;
             padding: .4rem;
         }
-        .function-bg{
-            width: 100%;
-            height: 100%;
-            background-color: #fff;
-            /* background-image: url(./图片/一键成片/1-bg.png);
-            background-size: 100% 100%; */
-            padding-top: .3rem;
-            /* border: 1px solid #d1d6e1; */
-            box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.16);
-            border-radius: .1rem;
-            overflow: hidden;
-        }
-        .function-title{
+        .function-title,.advantage-title{
             font-size: .34rem;
             font-weight: 500;
             text-align: center;
-            
+            margin-bottom: .3rem;
         }
         .function-content{
-            min-height: 6rem;
-            padding: .34rem .23rem .43rem .25rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
         .function-content>div{
+            width: 49%;
+            min-height: 1rem;
+            margin-bottom: .1rem;
+            padding: .34rem .2rem .3rem;
+            background:#fff6f7;
+            border-radius: .1rem;
+        }
+        .function-name,.advantage-name{
             display: flex;
-        }
-        .function-left{
-            width: 50%;
-            border-bottom: 1px solid #cbcbcb;
-            border-right: 1px solid #cbcbcb;
-            padding-top: .15rem;
-        }
-        .function-content>div:last-child .function-left,.function-content>div:last-child .function-right{
-            border-bottom: none;
-        }
-        .function-right{
-            border-bottom: 1px solid #cbcbcb;
-            width: 50%;
-            padding-top: .15rem;
-            padding-left: .1rem;
-        }
-        .function-img{
-            width: .42rem;
-            height: .36rem;
-        }
-        .function-img img{
-            width: 100%;
-            height: 100%;
-        }
-        .function-name{
+            align-items: center;
             font-size: .27rem;
             font-weight: 500;
-            margin: .2rem 0 .14rem 0;
         }
-        .function-text{
-            color: #666666;
+        .function-name img,.advantage-name img{
+            width: .34rem;
+            height: .34rem;
+            margin-right: .16rem;
+        }
+        .function-line,.advantage-line{
+            width: 100%;
+            height: .01rem;
+            background-color: #d2dadc;
+            margin: .18rem 0 .16rem;
+        }
+        .function-text,.advantage-text{
+            color: #909394;
             font-size: .24rem;
         }
-        .function-text p{
-            width: 113%;
+        .function-text p,.advantage-text p{
             transform-origin: left top;
             transform: scale(.86,.86);
+            width: 117%;
         }
         .advantage{
             width: 100%;
@@ -281,10 +262,6 @@
             box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.16);
             margin-bottom: .14rem;
         }
-        .first{
-            background-image: url(./图片/智能写稿/4.png);
-            background-size: 100% 100%;
-        }
         .custom-name{
             font-size: .27rem;
             margin-bottom: .1rem;
@@ -346,13 +323,25 @@
         .custom-top>div.active .custom-name{
             color: #db1717;
         }
+        .custom-top>div.active{
+            background-image: url(./图片/智能写稿/4.png);
+            background-size: 100% 100%;
+        }
+        .function-content>div.active .function-name{
+            color: #0045d9;
+        }
+        .function-content>div.active{
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.16);
+        }
     </style>
 </head>
 <body>
     <div class="view">
         <div class="header">
             <div class="header-left">
-                <img src="./图片/AIGC智能工坊/logo@2x.png" alt="">
+                <a href="./index.html">
+                    <img src="./图片/AIGC智能工坊/logo@2x.png" alt="">
+                </a>
             </div>
             <div class="header-right">
                 <a href="./index.html">
@@ -371,6 +360,71 @@
             </div>
         </div>
         <div class="function">
+            <div class="function-title">产品功能</div>
+            <div class="function-content">
+                <div class="first active">
+                    <div class="function-name">
+                        <img src="./图片/AI数字人主播/1-icon.png" alt="">
+                        <p>一键成文</p>
+                    </div>
+                    <div class="function-line"></div>
+                    <div class="function-text">
+                        <p>根据主题快速生成文本，用于媒体融合发布</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="function-name">
+                        <img src="./图片/AI数字人主播/2-icon.png" alt="">
+                        <p>要点提取</p>
+                    </div>
+                    <div class="function-line"></div>
+                    <div class="function-text">
+                        <p>快速提取文章中的关键要点，为新媒体提供核心文本素材</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="function-name">
+                        <img src="./图片/AI数字人主播/3-icon.png" alt="">
+                        <p>脚本生成</p>
+                    </div>
+                    <div class="function-line"></div>
+                    <div class="function-text">
+                        <p>根据主题、关键词快速生成脚本，为拍摄剪辑提供创意思路，加快节目制作进度</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="function-name">
+                        <img src="./图片/AI数字人主播/4-icon.png" alt="">
+                        <p>标题生成</p>
+                    </div>
+                    <div class="function-line"></div>
+                    <div class="function-text">
+                        <p>生成引人入胜的视频、文章标题和推荐语，提高文章的点击率和观看量</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="function-name">
+                        <img src="./图片/AI数字人主播/5-icon.png" alt="">
+                        <p>文章缩编</p>
+                    </div>
+                    <div class="function-line"></div>
+                    <div class="function-text">
+                        <p>将大篇幅文章中的重点段落、语句重新编辑，按字数要求输出缩编文章，方便用户通过移动端进行阅读</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="function-name">
+                        <img src="./图片/AI数字人主播/6-icon.png" alt="">
+                        <p>生成配音稿</p>
+                    </div>
+                    <div class="function-line"></div>
+                    <div class="function-text">
+                        <p>根据文案快速生成视频配音解说词，提供更好的观众体验，并使内容更易于理解</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="function">
             <div class="function-bg">
                 <div class="function-title">产品功能</div>
                 <div class="function-content">
@@ -437,7 +491,7 @@
                 </div>
             </div>
             
-        </div>
+        </div> -->
         <div class="advantage">
             <div class="advantage-title">产品优势</div>
             <div class="advantage-content">
@@ -594,6 +648,11 @@
         $(this).addClass("active").siblings().removeClass("active");
     });
     $(".custom-top>div").on("click",function(event) {
+        event.stopPropagation()
+        // addClass 给元素添加指定的样式
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+    $(".function-content>div").on("click",function(event) {
         event.stopPropagation()
         // addClass 给元素添加指定的样式
         $(this).addClass("active").siblings().removeClass("active");

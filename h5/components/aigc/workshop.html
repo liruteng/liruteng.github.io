@@ -94,9 +94,6 @@
             background:#f0fafc;
             border-radius: .1rem;
         }
-        .first,.advantage-first{
-            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.16);
-        }
         .function-name,.advantage-name{
             display: flex;
             align-items: center;
@@ -133,21 +130,19 @@
             padding: .34rem .2rem .3rem;
             background:#f0fafc;
             border-radius: .1rem;
-        }
-        .advantage-content .advantage-first{
-            /* padding-bottom:0 ;
-            padding-right: 0; */
             position: relative;
         }
-        .advantage-first .first-bg{
+        .first-bg{
             position: absolute;
             right: 0;
+            bottom: 0;
             width: 1.42rem;
             height: 1.68rem;
             background-image: url(./图片/H5创意工坊/2.png);
             background-position: right bottom;
             background-size: 100% 100%;
             background-repeat:repeat-y;
+            display: none;
         }
         .scene{
             width: 100%;
@@ -179,9 +174,6 @@
             background:#f0fafc;
             border-radius: .1rem;
             margin-bottom: .16rem;
-        }
-        .scene-left{
-            border-bottom: 1px solid #edeae9;
         }
         .scene-left img,.scene-right img,.scene-bottom img{
             width: 100%;
@@ -288,11 +280,20 @@
         .function-content>div.active .function-name{
             color: #0045d9;
         }
+        .function-content>div.active{
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.16);
+        }
         .advantage-content>div.active .advantage-name{
-            color: #db1717;
+            color: #0045d9;
+        }
+        .advantage-content>div.active .first-bg{
+            display: block;
         }
         .scene-top>div.active .scene-name{
-            color: #db1717;
+            color: #0045d9;
+        }
+        .scene-top>div.active{
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.16);
         }
     </style>
 </head>
@@ -300,7 +301,9 @@
     <div class="view">
         <div class="header">
             <div class="header-left">
-                <img src="./图片/AIGC智能工坊/logo@2x.png" alt="">
+                <a href="./index.html">
+                    <img src="./图片/AIGC智能工坊/logo@2x.png" alt="">
+                </a>
             </div>
             <div class="header-right">
                 <a href="./index.html">
@@ -416,6 +419,7 @@
                     
                 </div>
                 <div>
+                    <div class="first-bg"></div>
                     <div class="advantage-name">
                         <img src="./图片/H5创意工坊/icon-2.png" alt="">
                         <p>部署灵活</p>
@@ -426,6 +430,7 @@
                     </div>
                 </div>
                 <div>
+                    <div class="first-bg"></div>
                     <div class="advantage-name">
                         <img src="./图片/H5创意工坊/icon-3.png" alt="">
                         <p>服务完备</p>
@@ -436,6 +441,7 @@
                     </div>
                 </div>
                 <div>
+                    <div class="first-bg"></div>
                     <div class="advantage-name">
                         <img src="./图片/H5创意工坊/icon-4.png" alt="">
                         <p>功能丰富</p>
@@ -446,6 +452,7 @@
                     </div>
                 </div>
                 <div>
+                    <div class="first-bg"></div>
                     <div class="advantage-name">
                         <img src="./图片/H5创意工坊/icon-5.png" alt="">
                         <p>常用常新</p>
