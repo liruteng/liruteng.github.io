@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H5创意工坊</title>
+    <script src="./rem.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        img{
+            padding: 0;
+            margin: 0;
+            display: block;
+        }
+        .view{
+            width: 100%;
+            min-height: 100vh;
+            background-color: #fff;
+            font-size: 16px;
+        }
+        .header{
+            width: 100%;
+            height: 1.24rem;
+            background-color: #222;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 0 .4rem;
+        }
+        .header-left{
+            width: 1.48rem;
+            height: .66rem;
+        }
+        .header-right{
+            width: .48rem;
+            height: .4rem;
+        }
+        .header-left img{
+            width: 1.48rem;
+            height: .66rem;
+        }
+        .header-right img{
+            width: .48rem;
+            height: .4rem;
+        }
+        .banner{
+            width: 100%;
+            min-height: 4.2rem;
+            background-image: url(./图片/H5创意工坊/banner.png);
+            background-size: 100% 100%;
+        }
+        .banner-text{
+            width: 50%;
+            padding-left: .4rem;
+            padding-top: .82rem;
+            color: #fff;
+        }
+        .banner-text-title{
+            font-size: .31rem;
+            font-weight: 400;
+            padding-bottom: .16rem;
+        }
+        .banner-text-text{
+            font-size: .24rem;
+            padding-bottom: .04rem;
+            width: 105%;
+        }
+        .function,.advantage{
+            width: 100%;
+            padding: .4rem;
+        }
+        .function-title,.advantage-title{
+            font-size: .34rem;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: .3rem;
+        }
+        .function-content{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .function-content>div{
+            width: 49%;
+            min-height: 1rem;
+            margin-bottom: .1rem;
+            padding: .34rem .2rem .3rem;
+            background:#f0fafc;
+            border-radius: .1rem;
+        }
+        .first,.advantage-first{
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.16);
+        }
+        .function-name,.advantage-name{
+            display: flex;
+            align-items: center;
+            font-size: .27rem;
+            font-weight: 500;
+        }
+        .function-name img,.advantage-name img{
+            width: .34rem;
+            height: .34rem;
+            margin-right: .16rem;
+        }
+        .function-line,.advantage-line{
+            width: 100%;
+            height: .01rem;
+            background-color: #d2dadc;
+            margin: .18rem 0 .16rem;
+        }
+        .function-text,.advantage-text{
+            color: #909394;
+            font-size: .24rem;
+        }
+        .function-text p,.advantage-text p{
+            transform-origin: left top;
+            transform: scale(.86,.86);
+            width: 117%;
+        }
+        .advantage{
+            padding-top: 0;
+        }
+        .advantage-content>div{
+            width: 100%;
+            min-height: 1rem;
+            margin-bottom: .1rem;
+            padding: .34rem .2rem .3rem;
+            background:#f0fafc;
+            border-radius: .1rem;
+        }
+        .advantage-content .advantage-first{
+            /* padding-bottom:0 ;
+            padding-right: 0; */
+            position: relative;
+        }
+        .advantage-first .first-bg{
+            position: absolute;
+            right: 0;
+            width: 1.42rem;
+            height: 1.68rem;
+            background-image: url(./图片/H5创意工坊/2.png);
+            background-position: right bottom;
+            background-size: 100% 100%;
+            background-repeat:repeat-y;
+        }
+        .scene{
+            width: 100%;
+            padding: 0 .4rem .3rem;
+        }
+        .scene-title{
+            font-size: .34rem;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: .3rem;
+        }
+        /* .scene-content{
+            display: flex;
+            justify-content: space-between;
+        } */
+        .scene-content .scene-top{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .scene-content .scene-left,.scene-content .scene-right{
+            width: 49%;
+            background:#f0fafc;
+            border-radius: .1rem;
+            margin-bottom: .16rem;
+        }
+        .scene-content .scene-bottom{
+            width: 100%;
+            background:#f0fafc;
+            border-radius: .1rem;
+            margin-bottom: .16rem;
+        }
+        .scene-left{
+            border-bottom: 1px solid #edeae9;
+        }
+        .scene-left img,.scene-right img,.scene-bottom img{
+            width: 100%;
+            height: .78rem;
+        }
+        .text{
+            padding: .18rem .22rem .2rem;
+        }
+        .scene-name{
+            font-size: .27rem;
+            margin-bottom: .1rem;
+            font-weight: 500;
+        }
+        .scene-text{
+            color: #919292;
+            font-size: .24rem;
+        }
+        .scene-text p{
+            width: 119%;
+            transform-origin: left top;
+            transform: scale(.86,.86);
+        }
+        .custom-title{
+            font-size: .34rem;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: .3rem;
+        }
+        .custom-first,.custom-second,.custom-third,.custom-fourth{
+            width: 100%;
+            margin-bottom: .18rem;
+            padding: .3rem .6rem .16rem;
+            background-color: #fff;
+            background-size: 100% 100%;
+            border-bottom: 1px solid #f0fafc;
+        }
+        .custom-first{
+            background-image: url(./图片/H5创意工坊/4-1.png);
+        }
+        .custom-second{
+            background-image: url(./图片/H5创意工坊/4-2.png);
+        }
+        .custom-third{
+            background-image: url(./图片/H5创意工坊/4-3.png);
+        }
+        .custom-name{
+            font-size: .27rem;
+            margin-bottom: .1rem;
+            font-weight: 500;
+        }
+        .custom-first .custom-name{
+            /* color: #db1717; */
+        }
+        .custom-text{
+            color: #919292;
+            font-size: .24rem;
+        }
+        .custom-text p{
+            width: 119%;
+            transform-origin: left top;
+            transform: scale(.86,.86);
+        }
+        .contact{
+            width: 100%;
+            background-color: #222222;
+            box-sizing: border-box;
+            padding: .34rem 0 .2rem;
+        }
+        .contact div{
+            transform: scale(.9,.9);
+            width: 100%;
+            text-align: center;
+            color: #a9a9a9;
+            font-size: .24rem;
+        }
+        .contact .contact-title{
+            font-size: .24rem;
+            font-weight: 500;
+            margin-bottom: .15rem;
+            color: #fff;
+            transform: scale(1,1);
+        }
+        .line{
+            width: 100%;
+            height: .01rem;
+            background-color: #8a8a8a;
+            margin-top: .34rem;
+            margin-bottom: .2rem;
+        }
+        .bot-img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .bot-img img{
+            width: .16rem;
+            height: .16rem;
+            margin-left: .16rem;
+            margin-right: .04rem;
+        }
+        .small,.bot-img{
+            transform: scale(.7,.7);
+        }
+        .function-content>div.active .function-name{
+            color: #0045d9;
+        }
+        .advantage-content>div.active .advantage-name{
+            color: #db1717;
+        }
+        .scene-top>div.active .scene-name{
+            color: #db1717;
+        }
+    </style>
+</head>
+<body>
+    <div class="view">
+        <div class="header">
+            <div class="header-left">
+                <img src="./图片/AIGC智能工坊/logo@2x.png" alt="">
+            </div>
+            <div class="header-right">
+                <a href="./index.html">
+                    <img src="./图片/智能写稿/矢量智能对象@2x.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="banner-text">
+                <p class="banner-text-title">H5创意工坊</p>
+                <p class="banner-text-text">一站式H5生成工具，丰富的模版</p>
+                <p class="banner-text-text">库，支持音视图文等多媒体形态</p>
+            </div>
+        </div>
+        <div class="function">
+            <div class="function-title">产品功能</div>
+            <div class="function-content">
+                <div class="first active">
+                    <div class="function-name">
+                        <img src="./图片/H5创意工坊/1-icon.png" alt="">
+                        <p>活动制作</p>
+                    </div>
+                    <div class="function-line"></div>
+                    <div class="function-text">
+                        <p>支持自主策划、制作，快速、低代码地实现面向广大受众发布的复杂H5互动活动内容</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="function-name">
+                        <img src="./图片/H5创意工坊/2-icon.png" alt="">
+                        <p>模版套用</p>
+                    </div>
+                    <div class="function-line"></div>
+                    <div class="function-text">
+                        <p>支持多类型的预置H5模板，仅通过调整页面元素便可实现互动内容的快速创建</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="function-name">
+                        <img src="./图片/H5创意工坊/3-icon.png" alt="">
+                        <p>自定义编辑</p>
+                    </div>
+                    <div class="function-line"></div>
+                    <div class="function-text">
+                        <p>提供H5编辑工具，支持高自由度H5内容的自定义编辑，支持跨页、浮窗、动画、样式、特效等编辑维度</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="function-name">
+                        <img src="./图片/H5创意工坊/4-icon.png" alt="">
+                        <p>低代码插件</p>
+                    </div>
+                    <div class="function-line"></div>
+                    <div class="function-text">
+                        <p style="width: 125%;transform: scale(.84,.84);">支持图片、视音频、字幕、倒计时、表格、幻灯片等多种插件模组在编辑过程中的快速嵌入与使用</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="function-name">
+                        <img src="./图片/H5创意工坊/5-icon.png" alt="">
+                        <p>JS脚本编辑</p>
+                    </div>
+                    <div class="function-line"></div>
+                    <div class="function-text">
+                        <p>支持通过直接编辑JS脚本实现复杂效果、逻辑的创造与添加</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="function-name">
+                        <img src="./图片/H5创意工坊/6-icon.png" alt="">
+                        <p>发布预览</p>
+                    </div>
+                    <div class="function-line"></div>
+                    <div class="function-text">
+                        <p>支持预览制作好的创意H5内容，所见即所得</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="function-name">
+                        <img src="./图片/H5创意工坊/7-icon.png" alt="">
+                        <p>H5分享</p>
+                    </div>
+                    <div class="function-line"></div>
+                    <div class="function-text">
+                        <p>支持H5内容的发布、嵌套、分享，支持微信转发</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="function-name">
+                        <img src="./图片/H5创意工坊/8-icon.png" alt="">
+                        <p>数据统计</p>
+                    </div>
+                    <div class="function-line"></div>
+                    <div class="function-text">
+                        <p>支持H5发布数据统计，评估作品传播效果</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advantage">
+            <div class="advantage-title">产品优势</div>
+            <div class="advantage-content">
+                <div class="advantage-first active">
+                    <div class="first-bg"></div>
+                        <div class="advantage-name">
+                            <img src="./图片/H5创意工坊/icon-1.png" alt="">
+                            <p>系统可靠</p>
+                        </div>
+                        <div class="advantage-line"></div>
+                        <div class="advantage-text">
+                            <p>纯自研系统，拥有全部系统代码，技术栈安全可靠。对接CDN，无惧爆款H5内容的高流量访问</p>
+                        </div>
+                    
+                </div>
+                <div>
+                    <div class="advantage-name">
+                        <img src="./图片/H5创意工坊/icon-2.png" alt="">
+                        <p>部署灵活</p>
+                    </div>
+                    <div class="advantage-line"></div>
+                    <div class="advantage-text">
+                        <p>支持本地化部署，可满足安全等级保护要求</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="advantage-name">
+                        <img src="./图片/H5创意工坊/icon-3.png" alt="">
+                        <p>服务完备</p>
+                    </div>
+                    <div class="advantage-line"></div>
+                    <div class="advantage-text">
+                        <p style="transform: scale(.84,0.84);width: 120%;">在H5创意内容制作过程中，提供技术顾问，支持一对一技术咨询与帮助</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="advantage-name">
+                        <img src="./图片/H5创意工坊/icon-4.png" alt="">
+                        <p>功能丰富</p>
+                    </div>
+                    <div class="advantage-line"></div>
+                    <div class="advantage-text">
+                        <p>支持多插件模组编辑，支持JS代码编辑、低代码引用、VR+陀螺仪全景设置，以实现多样化的内容呈现效果</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="advantage-name">
+                        <img src="./图片/H5创意工坊/icon-5.png" alt="">
+                        <p>常用常新</p>
+                    </div>
+                    <div class="advantage-line"></div>
+                    <div class="advantage-text">
+                        <p>支持将制作好的H5作品抽象为H5模板，用以支持后续类似创意内容的快速制作</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scene">
+            <div class="scene-title">应用场景</div>
+            <div class="scene-content">
+                <div class="scene-top">
+                    <div class="scene-left active">
+                        <img src="./图片/H5创意工坊/3-1.png" alt="">
+                        <div class="text">
+                            <div class="scene-name">线上运营</div>
+                            <div class="scene-text"><p>策划并实现各类型运营方案，帮助企业进行内容营销，增加品牌曝光和吸引用户</p></div>
+                        </div>
+                    </div>
+                    <div class="scene-right">
+                        <img src="./图片/H5创意工坊/3-2.png" alt="">
+                        <div class="text">
+                            <div class="scene-name">新闻报道</div>
+                            <div class="scene-text"><p>立体化制作新闻内容，用于专题性质的内容报道</p></div>
+                        </div>
+                    </div>
+                    <div class="scene-right">
+                        <img src="./图片/H5创意工坊/3-3.png" alt="">
+                        <div class="text">
+                            <div class="scene-name">在线电商</div>
+                            <div class="scene-text"><p>为电商平台生成商品宣传、介绍内容，帮助提升产品的销售效果</p></div>
+                        </div>
+                    </div>
+                    <div class="scene-right">
+                        <img src="./图片/H5创意工坊/3-4.png" alt="">
+                        <div class="text">
+                            <div class="scene-name">教育培训</div>
+                            <div class="scene-text"><p>生成教学材料、课件、练习题等，辅助学生学习和教学</p></div>
+                        </div>
+                    </div>
+                    <div class="scene-bottom">
+                        <img src="./图片/H5创意工坊/3-5.png" alt="">
+                        <div class="text">
+                            <div class="scene-name">客户服务</div>
+                            <div class="scene-text"><p>生成意见征集、客户回馈等互动内容，提供有效的客户服务</p></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="custom">
+            <div class="custom-title">客户价值</div>
+            <div class="custom-first">
+                <div class="custom-name">提高生产力</div>
+                <div class="custom-text">
+                    <p>可有效支撑原本复杂甚至不可能实现的活动策划内容，提高部门/公司整体的内容制作能力与效率</p>
+                </div>
+            </div>
+            <div class="custom-second">
+                <div class="custom-name">提升传播体验</div>
+                <div class="custom-text">
+                    <p>不同于传统稿件及视音频内容的单向内容输出方式，H5创意内容支持与受众进行大量内容及操作交互，提升内容的传播体验</p>
+                </div>
+            </div>
+            <div class="custom-third">
+                <div class="custom-name">提高传播效率</div>
+                <div class="custom-text">
+                    <p>通过寓教于乐的交互设计与实现，大大提升受众对创意内容的参与感，进而更好的实现内容传播</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact-title">联系我们</div>
+            <div>北京总部</div>
+            <div>办公地址：北京市昌平区半壁街9号</div>
+            <div>电话：010-62977026/400-900-7025</div>
+            <div>邮编：100085</div>
+            <div>邮箱:mkt@yunshicloud.com</div>
+            <div>中南办事处(武汉）</div>
+            <div>办公地址：武汉市武昌区中北路姚家岭114号景天楼1-9-2</div>
+            <div>联系电话:027-68874905</div>
+            <div>邮编：430071</div>
+            <div class="line"></div>
+            <div class="small">版权所有@北京阳光云视科技有限公司 2020</div>
+            <div class="bot-img">京ICP备17015824号-4 @
+                <img src="./图片/首页/矢量智能对象.png" alt="">
+                京公网安备11010802031184</div>
+        </div>
+    </div>
+</body>
+<script src="./jquery.js"></script>
+<script>
+    $(".scene-top>div").on("click",function(event) {
+        event.stopPropagation()
+        // addClass 给元素添加指定的样式
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+    $(".advantage-content>div").on("click",function(event) {
+        event.stopPropagation()
+        // addClass 给元素添加指定的样式
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+    $(".function-content>div").on("click",function(event) {
+        event.stopPropagation()
+        // addClass 给元素添加指定的样式
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+    
+</script>
+</html>

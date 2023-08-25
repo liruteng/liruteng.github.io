@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能工坊</title>
+    <script src="./rem.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+			-webkit-user-select: none;
+			-moz-user-focus: none;
+			-moz-user-select: none;
+        }
+        a:link {
+            text_decoration: none;
+        }
+        a:visited {
+            text_decoration: none;
+        }
+        a:hover {
+            text_decoration: none;
+        }
+        a:active {
+            text_decoration: none;
+        }
+        a:focus {
+            text_decoration: none;
+        }
+        img{
+            padding: 0;
+            margin: 0;
+            display: block;
+        }
+        .view{
+            width: 100%;
+            min-height: 100vh;
+            background-color: #eee;
+            font-size: 16px;
+        }
+        .header{
+            width: 100%;
+            height: 1.24rem;
+            background-color: #222;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 0 .4rem;
+        }
+        .header-left{
+            width: 1.48rem;
+            height: .66rem;
+        }
+        .header-right{
+            width: .48rem;
+            height: .4rem;
+        }
+        .header-left img{
+            width: 1.48rem;
+            height: .66rem;
+        }
+        .header-right img{
+            width: .48rem;
+            height: .4rem;
+        }
+        .banner{
+            width: 100%;
+            min-height: 4.2rem;
+            background-image: url(./图片/AIGC智能工坊/banner-bg@2x.png);
+            background-size: 100% 100%;
+        }
+        .banner-text{
+            width: 50%;
+            padding-left: .4rem;
+            padding-top: .82rem;
+            color: #fff;
+        }
+        .banner-text-title{
+            font-size: .31rem;
+            font-weight: 400;
+            padding-bottom: .16rem;
+        }
+        .banner-text-text{
+            font-size: .23rem;
+            padding-bottom: .04rem;
+        }
+        .advantage{
+            width: 100%;
+            box-sizing: border-box;
+            padding: .3rem .4rem .1rem;
+        }
+        .advantage-content{
+            min-height: 3rem;
+            box-sizing: border-box;
+            padding: .4rem .22rem .22rem .24rem;
+            background-image: url(./图片/AIGC智能工坊/1.png);
+            background-size: 100% 100%;
+            box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.16);
+            border-radius: .1rem;
+            overflow: hidden;
+        }
+        .advantage-title{
+            font-size: .34rem;
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: .16rem;
+        }
+        .advantage-name{
+            font-size: .26rem;
+            font-weight: 500;
+            margin-bottom: .08rem;
+        }
+        .advantage-content .advantage-text{
+            font-size: .14rem;
+            color: #727272;
+        }
+        .advantage-text p{
+            transform-origin:left top ;
+            transform: scale(.9,.9);
+            width: 114%;
+        }
+        .advantage-view{
+            display: flex;
+            justify-content: space-between;
+        }
+        .advantage-left{
+            width: 47%;
+        }
+        .advantage-right{
+            width: 49%;
+        }
+        /* .advantage-bottom{
+            padding-bottom: .2rem;
+        } */
+        .product{
+            padding: .4rem .4rem 0;
+        }
+        .product-title,.basics-title{
+            text-align: center;
+            font-size: .34rem;
+            font-weight: 500;
+            margin-bottom: .32rem;
+        }
+        .product-content{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: .19rem;
+        }
+        .product-left,.product-right{
+            width: 49%;
+            height: 2.8rem;
+            padding: .3rem .2rem .2rem;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: .14rem;
+        }
+        .product-right{
+            margin-left: .09rem;
+        }
+        .bg1{
+            background-image: url(./图片/AIGC智能工坊/2-1.png);
+            background-size: 100% 100%;
+        }
+        .bg2{
+            background-image: url(./图片/AIGC智能工坊/2-2.png);
+            background-size: 100% 100%;
+        }
+        .bg3{
+            background-image: url(./图片/AIGC智能工坊/2-3.png);
+            background-size: 100% 100%;
+        }
+        .bg4{
+            background-image: url(./图片/AIGC智能工坊/2-4.png);
+            background-size: 100% 100%;
+        }
+        .bg5{
+            background-image: url(./图片/AIGC智能工坊/2-5.png);
+            background-size: 100% 100%;
+        }
+        .bg6{
+            background-image: url(./图片/AIGC智能工坊/2-6.png);
+            background-size: 100% 100%;
+        }
+        .product-top{
+            font-size: .27rem;
+            font-weight: 500;
+        }
+        .product-text{
+            color: #666;
+            font-size: .24rem;
+            width: 120%;
+        }
+        .product-text p{
+            transform-origin: left top;
+            transform: scale(.8,.8);
+        }
+        .bg5 .product-text p{
+            width: 104%;
+        }
+        .product-btn{
+            height: .3rem;
+            width: 1rem;
+            background-color: #db0000;
+            text-align: center;
+            line-height: .3rem;
+            /* font-size: .013rem; */
+            color: #fdf5f5;
+        }
+        .product-btn p{
+            font-size: .24rem;
+            width: 101%;
+            transform: scale(.8,.8);
+        }
+        .default{
+            background-color: #d9d9d9;
+            color: #fdf5f5;
+        }
+        .basics-title{
+
+        }
+        .basics-top,.basics-bottom{
+            width: 100%;
+            min-height: 2.08rem;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding: .26rem .56rem .2rem .6rem;
+        }
+        .basics-top{
+            background-image: url(./图片/AIGC智能工坊/3-1.png);
+            background-size: 100% 100%;
+            margin-bottom: .2rem;
+        }
+        .basics-bottom{
+            background-image: url(./图片/AIGC智能工坊/3-2.png);
+            background-size: 100% 100%;
+        }
+        .basics-name{
+            font-size: .26rem;
+            font-weight: 500;
+        }
+        .basics-text{
+            width: 100%;
+            color: #727273;
+            font-size: .24rem;
+        }
+        .basics-text p{
+            transform: scale(.85,.85);
+            transform-origin: left top;
+            width: 118%;
+        }
+        .basics-img{
+            height: .32rem;
+            position: relative; 
+        }
+        .basics-img img{
+            height: .32rem;
+            position: absolute;
+            right: 0;
+        }
+        .img2 img{
+            height: .34rem;
+        }
+        .contact{
+            width: 100%;
+            background-color: #222222;
+            box-sizing: border-box;
+            padding: .34rem 0 .2rem;
+        }
+        .contact div{
+            transform: scale(.9,.9);
+            width: 100%;
+            text-align: center;
+            color: #a9a9a9;
+            font-size: .24rem;
+        }
+        .contact .contact-title{
+            font-size: .24rem;
+            font-weight: 500;
+            margin-bottom: .15rem;
+            color: #fff;
+            transform: scale(1,1);
+        }
+        .line{
+            width: 100%;
+            height: .01rem;
+            background-color: #8a8a8a;
+            margin-top: .34rem;
+            margin-bottom: .2rem;
+        }
+        .bot-img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .bot-img img{
+            width: .16rem;
+            height: .16rem;
+            margin-left: .16rem;
+            margin-right: .04rem;
+        }
+        .small,.bot-img{
+            transform: scale(.7,.7);
+        }
+        .product-content>div.active .product-top{
+            color: #db0000;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="view">
+        <div class="header">
+            <div class="header-left">
+                <img src="./图片/AIGC智能工坊/logo@2x.png" alt="">
+            </div>
+            <div class="header-right">
+                <a href="./index.html">
+                    <img src="./图片/智能写稿/矢量智能对象@2x.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="banner-text">
+                <p class="banner-text-title">AIGC智能工坊</p>
+                <p class="banner-text-text">智能写稿｜智能成片｜数字孪生</p>
+                <p class="banner-text-text">H5创意工坊｜智能工具集</p>
+                <p class="banner-text-text">虚拟兵团</p>
+            </div>
+        </div>
+        <div class="advantage">
+            <div class="advantage-content">
+                <div class="advantage-title">优势</div>
+                <div class="advantage-view">
+                    <div class="advantage-left">
+                        <div class="advantage-name">
+                            可信赖的意识形态
+                        </div>
+                        <div class="advantage-text">
+                            <p>基于官方媒体的可信赖数据，确保各项应用的底层模型具备可靠的意识形态，同时用户可使用私有数据对模型做更深入微调，以形成自身独有风格</p>
+                        </div>
+                    </div>
+                    <div class="advantage-right">
+                        <div class="advantage-name">
+                            贴近行业应用的产品设计
+                        </div>
+                        <div class="advantage-text">
+                            <p>需求来源于第一线，所有产品设计遵循一线采编人员的工作习惯，降低使用门槛，不增加额外学习成本</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="advantage-bottom">
+                    <div class="advantage-name">
+                        灵活的获取方式
+                    </div>
+                    <div class="advantage-text">
+                        <p>系统同时支持私有化部署与云服务两种交付方式，用户可根据自身需求灵活获取方式</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-title">
+                产品功能
+            </div>
+            <div class="product-content">
+                <div class="product-left left1 bg1 active">
+                    <div>
+                        <div class="product-top">智能写稿</div>
+                        <div class="product-text">
+                            <p>具备一键成文、长文缩编、自动标题、要点提取等多项功能，有效提升文字工作效率。同时提供私有数据训练能力，助力形成自有文字风格</p>
+                        </div>
+                    </div>
+                    <a href="./IntelligentWriting.html">
+                        <div class="product-btn">
+                            <p>查看详情</p>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="product-right left1 bg2">
+                    <div>
+                        <div class="product-top">智能成片</div>
+                        <div class="product-text">
+                            <p>基于多模态大模型能力，支持自动成片、长视频缩编等多种应用场景，具备二次编辑能力，可预设多种模版，有效提升视频生成效率</p>
+                        </div>
+                    </div>
+                    <a href="./oneClick.html">
+                        <div class="product-btn">
+                            <p>查看详情</p>
+                        </div>
+                    </a>
+                    
+                </div>
+            <!-- </div>
+            <div class="product-content bot"> -->
+                <div class="product-left bg3">
+                    <div>
+                        <div class="product-top">数字孪生</div>
+                        <div class="product-text">
+                            <p>便捷的数字人建模与应用工具，方便用户快速建立海量内容生产能力，有效应对运营成本压力</p>
+                        </div>
+                    </div>
+                    <a href="./numeral.html">
+                        <div class="product-btn">
+                            <p>查看详情</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-right bg4">
+                    <div>
+                        <div class="product-top">H5创意工坊</div>
+                        <div class="product-text">
+                            <p>一站式H5生成工具，丰富的模版库，支持音视图文等多媒体形态</p>
+                        </div>
+                    </div>
+                    <a href="./workshop.html">
+                        <div class="product-btn">
+                            <p>查看详情</p>
+                        </div>
+                    </a>
+                </div>
+            <!-- </div>
+            <div class="product-content bot"> -->
+                <div class="product-left bg5">
+                    <div>
+                        <div class="product-top">智能工具集</div>
+                        <div class="product-text">
+                            <p>提供智能修图、上变换转码、智能审核、视频编辑等丰富的工具，方便用户一站式解决所有问题</p>
+                        </div>
+                    </div>
+                    <div class="product-btn default">
+                        <p>查看详情</p>
+                    </div>
+                </div>
+                <div class="product-right bg6">
+                    <div>
+                        <div class="product-top">虚拟兵团</div>
+                        <div class="product-text">
+                            <p>方便媒体机构规模化运营，有效降低运营成本</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-btn default">
+                        <p>查看详情</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="basics">
+            <div class="basics-title">基础技术</div>
+            <div class="basics-content">
+                <div class="basics-top">
+                    <div class="basics-name">华为盘古</div>
+                    <div class="basics-text">
+                        <p>
+                            与华为盘古正式签署生态合作协议，在智能成稿等文字生成类应用中，底层对接华为盘古NLP大模型，确保生成内容具备正确的意识形态以及良好的三观表现
+                        </p>
+                    </div>
+                    <div class="basics-img">
+                        <img src="./图片/AIGC智能工坊/huawei.png" alt="">
+                    </div>
+                </div>
+                <div class="basics-bottom">
+                    <div class="basics-name">清华大学</div>
+                    <div class="basics-text">
+                        <p>
+                            基于清华大学大模型技术，通过针对性训练．实现符合媒体行业需求的生成能力，并提供私有化部署方案及持续训练接口，确保客户私有数据的安全以及私有大模型底座的持续成长
+                        </p>
+                    </div>
+                    <div class="basics-img img2">
+                        <img src="./图片/AIGC智能工坊/qinghua.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact-title">联系我们</div>
+            <div>北京总部</div>
+            <div>办公地址：北京市昌平区半壁街9号</div>
+            <div>电话：010-62977026/400-900-7025</div>
+            <div>邮编：100085</div>
+            <div>邮箱:mkt@yunshicloud.com</div>
+            <div>中南办事处(武汉）</div>
+            <div>办公地址：武汉市武昌区中北路姚家岭114号景天楼1-9-2</div>
+            <div>联系电话:027-68874905</div>
+            <div>邮编：430071</div>
+            <div class="line"></div>
+            <div class="small">版权所有@北京阳光云视科技有限公司 2020</div>
+            <div class="bot-img">京ICP备17015824号-4 @
+                <img src="./图片/首页/矢量智能对象.png" alt="">
+                京公网安备11010802031184</div>
+        </div>
+    </div>
+</body>
+
+<script src="./jquery.js"></script>
+<script>
+    $(".product-content>div").on("click",function(event) {
+        event.stopPropagation()
+        // addClass 给元素添加指定的样式
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+</script>
+</html>
