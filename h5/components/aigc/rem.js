@@ -31,8 +31,6 @@
             docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
 
             //docEl.style.fontSize = clientWidth  / 7.5 + 'px';
-
-            console.log("1rem = " + docEl.style.fontSize);
         };
     if (doc.addEventListener === undefined) return;
     win.addEventListener(resizeEvt, recalc, false);
