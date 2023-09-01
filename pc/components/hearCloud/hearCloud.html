@@ -1,0 +1,756 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>云视科技</title>
+  <meta name="keywords" content="yunshicloud"/>
+  <meta name="description" content="yunshicloud"/>
+  <meta name="format-detection" content="telephone=no">
+  <!-- /etc/htmlhead.shtml Start -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <script type="text/javascript" src="../../common/js/noCache.js"></script>
+  <link rel="icon" type="image/x-icon" href="../../common/images/favicon.ico">
+  <link rel="stylesheet" href="../../common/css/common.css">
+  <link rel="stylesheet" href="../../common/css/base.css">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link class="css_style" rel="stylesheet" href="css/list_style.css"/>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <!-- /sn/htmlhead.shtml End -->
+  <style>
+    #header-wrap{
+      display: none !important;
+    }
+    .hearCloudBanner{
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .hearCloudBanner img{
+      width: 100%;
+      display: block;
+    }
+    .w1200{
+      width: 80vw;
+      margin: 0 auto;
+    }
+    @media screen and (max-width:1440px) {
+	    .w1200 {
+		    width: 90vw;
+	    }
+    }
+    .tit{
+      width: 338px;
+      border-bottom: 1px solid rgba(151,151,151,0.26);
+      text-align: center;
+      margin: 0 auto;
+      position: relative;
+      margin-bottom: 59px;
+      padding-top: 25px;
+    }
+    .tit h3{
+      font-size: 24px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #141A33;
+      margin-bottom: 22px;
+    }
+    .tit::after{
+      content: '';
+      width: 30px;
+      height: 4px;
+      background: #0A79F9;
+      position: absolute;
+      bottom: -1px;
+      left: 50%;
+      margin-left: -15px;
+    }
+    .w1200 .fourDiv{
+      margin-bottom: 80px;
+    }
+    .w1200 .fourDiv .p1{
+      font-size: 16px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #141A33;
+      line-height: 26px;
+      margin-bottom: 38px;
+    }
+    .w1200 .fourDiv ul{
+      display: flex;
+    }
+    .w1200 .fourDiv ul li{
+      width: 25%;
+      height: 265px;
+      text-align: center;
+      padding-top: 60px;
+      box-sizing: border-box;
+    }
+    .w1200 .fourDiv ul li .icon{
+      margin-bottom: 17px;
+    }
+    .w1200 .fourDiv ul li h4{
+      font-size: 18px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #061E42;
+      line-height: 25px;
+      margin-bottom: 14px;
+    }
+    .w1200 .fourDiv ul li p{
+      max-width: 192px;
+      font-size: 16px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #727685;
+      line-height: 22px;
+      margin: 0 auto;
+    }
+    /* .w1200 .fourDiv ul li:hover{
+      box-shadow: 0px 2px 11px 1px rgba(0,0,0,0.15);
+      border-radius: 8px;
+    } */
+    .w1200 .cjBox{
+      display: flex;
+      justify-content: space-between;
+      /* margin-bottom: 126px; */
+    }
+    .w1200 .ipadBox{
+      margin-bottom: 66px;
+    }
+    .blackBox{
+      width: 100%;
+      height: 524px;
+      background-image: url("./img/black_bg.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      padding-top: 65px;
+      box-sizing: border-box;
+    }
+    .byPc{
+      display: block;
+    }
+    .byPhone{
+      display: none;
+    }
+    .w1280{
+      width: 1280px;
+      margin: 0 auto;
+    }
+    .w1280 .tit h3{
+      color: #ffffff;
+    }
+    .threeDiv{
+      display: flex;
+      justify-content: space-between;
+    }
+    .w412{
+      width: 412px;
+      height: 240px;
+      padding: 22px 28px;
+      box-sizing: border-box;
+    }
+    .w412 h4{
+      font-size: 18px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 25px;
+      margin-bottom: 10px;
+    }
+    .w412 p{
+      font-size: 14px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 20px;
+    }
+    .w412.bg1{
+      background-image: url("./img/hover_bg1.png");
+      background-repeat: no-repeat;
+      background-position: left top;
+    }
+    .w412.bg1:hover{
+      background-position: left bottom;
+    }
+    .w412.bg2{
+      background-image: url("./img/hover_bg2.png");
+      background-repeat: no-repeat;
+      background-position: left top;
+    }
+    .w412.bg2:hover{
+      background-position: left bottom;
+    }
+    .w412.bg3{
+      background-image: url("./img/hover_bg3.png");
+      background-repeat: no-repeat;
+      background-position: left top;
+    }
+    .w412.bg3:hover{
+      background-position: left bottom;
+    }
+    .w1100{
+      width: 1100px;
+      margin: 0 auto;
+      padding: 66px 0 50px;
+    }
+    .w1100 .numBox{
+      display: flex;
+      justify-content: center;
+    }
+    .w1100 .numBox img{
+      margin: 0 95px;
+      margin-bottom: 60px;
+    }
+    .w1100 .logoBox{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      justify-content: space-between;
+    }
+    .w1100 .logoBox img{
+      margin-bottom: 20px;
+    }
+    .blueBox{
+      background-image: url("./img/blue_bg.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      padding-bottom: 100px;
+    }
+    .hearCloudHeader{
+      display: block !important;
+      width: 100%;
+      height: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .hearCloudHeader .w1200{
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .hearCloudHeader .headerNav{
+      display: flex;
+      align-items: center;
+    }
+    .hearCloudHeader .headerNav li{
+      font-size: 16px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #FFFFFF;
+      line-height: 22px;
+      cursor: pointer;
+      opacity: 0.8;
+      margin-left: 40px;
+    }
+    .hearCloudHeader .headerNav li:hover{
+      opacity: 1;
+    }
+    @media screen and (max-width:900px) {
+  
+      #header-wrap{
+        display: block !important;
+      }
+      .hearCloudHeader{
+        display: none !important;
+      }
+      .w1200{
+        width: 100%;
+      }
+      .tit{
+        width: 200px;
+        margin-bottom: 25px;
+      }
+      .tit h3{
+        font-size: 19px;
+        font-weight: 600;
+      }
+      .movePage1{
+        padding-top: 0 !important;
+      }
+      .w1200 .fourDiv{
+        margin-bottom: 20px;
+      }
+      .w1200 .fourDiv .p1{
+        padding: 0 20px;
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 25px;
+      }
+      .w1200 .fourDiv ul{
+        padding: 0 8px;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+      }
+      .w1200 .fourDiv ul li{
+        width: calc(50% - 14px);
+        margin: 0 7px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 11px 1px rgba(0,0,0,0.06);
+        border-radius: 8px;
+        margin-bottom: 14px;
+        padding: 16px 10px;
+        height: auto;
+        box-sizing: border-box;
+      }
+      .w1200 .fourDiv ul li .icon{
+        margin-bottom: 10px;
+      }
+      .w1200 .fourDiv ul li h4{
+        font-size: 16px;
+        margin-bottom: 7px;
+      }
+      .w1200 .fourDiv ul li p{
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .w1200 .cjBox{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      .w1200 .cjBox img{
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+      }
+      .blueBox{
+        background-position: bottom right;
+        padding-bottom: 10px;
+      }
+      .byPc{
+        display: none;
+      }
+      .byPhone{
+        display: block;
+      }
+      .w1200 .btns{
+        width: calc(100% - 40px);
+        height: 48px;
+        margin: 0 auto;
+        background: #FFFFFF;
+        border-radius: 10px;
+        border: 1px solid #E9E9E9;
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      .w1200 .btns .btn{
+        width: 50%;
+        height: 48px;
+        line-height: 48px;
+        font-size: 15px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #061E42;
+        text-align: center;
+      }
+      .w1200 .btns .btn.active{
+        background: #FFFFFF;
+        box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.08);
+        border-radius: 10px;
+        color: #0A79F9;
+      }
+      .w1200 .box{
+        text-align: center;
+        padding-bottom: 35px;
+      }
+      .w1200 .box img{
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+      }
+      .w1200 .box .hide{
+        display: none;
+      }
+      .w1200 .box .more{
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #868686;
+        line-height: 17px;
+        text-align: center;
+      }
+      .w1200 .box.box2{
+        display: none;
+      }
+      .blackBox{
+        height: auto;
+        padding-top: 0;
+        padding-bottom: 25px;
+      }
+      .w1280{
+        width: 100%;
+        padding: 0 18px;
+        box-sizing: border-box;
+      }
+      .threeDiv{
+        display: block;
+      }
+      .w412{
+        width: 100%;
+        height: 115px;
+        margin-bottom: 10px;
+      }
+      .w412.bg1:hover{
+        background-position: left top;
+      }
+      .w412.bg2:hover{
+        background-position: left top;
+      }
+      .w412.bg3:hover{
+        background-position: left top;
+      }
+      .w412 h4{
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      .w412 p{
+        font-size: 13px;
+      }
+      .w1100{
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+      }
+      .w1100 .numBox img{
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+      }
+      .w1100 .logoBox{
+        display: block;
+      }
+      .w1100 .logoBox .logos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-between;
+        padding: 0 10px;
+        box-sizing: border-box;
+      }
+      .w1100 .logoBox .logos img{
+        width: 33.3%;
+        padding: 0 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .flexBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-between;
+        padding: 0 10px;
+        box-sizing: border-box;
+        padding-bottom: 30px;
+      }
+      .flexBox img{
+        width: 33.3%;
+        padding: 0 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+    }
+  </style>
+</head>
+<body>
+<div id="header-wrap"></div>
+<div class="hearCloudHeader">
+  <div class="w1200">
+    <div class="logo">
+      <a href="https://www.yunshicloud.com/index.html">
+        <img src="./img/logo.png" alt="">
+      </a>
+    </div>
+    <ul class="headerNav">
+      <li onclick="movePage('.movePage1')">产品功能</li>
+      <li onclick="movePage('.movePage2')">应用场景</li>
+      <li onclick="movePage('.movePage3')">系统架构</li>
+      <li onclick="movePage('.movePage4')">角色应用</li>
+    </ul>
+  </div>
+</div>
+<div class="hearCloudBox">
+  <div class="hearCloudBanner">
+    <img src="./img/banner.png" alt="图片">
+  </div>
+  <div class="blueBox">
+    <div class="w1200" style="padding-top:30px;">
+      <div class="tit movePage1">
+        <h3>产品功能</h3>
+      </div>
+      <div class="fourDiv">
+        <p class="p1">听鉴云智慧汽车服务平台以大数据+人工智能为基础，不改变传统销售服务人员接待流程的前提下，基于音频采集经销商端销售全流程业务，通过平台智能能力为主机厂、经销商集团、店内管理人员提供实时、全量、客观、真实的业务数据，从而提升管理、营销转化能力</p>
+        <ul>
+          <li>
+            <img src="./img/four_icon1.png" alt="" class="icon">
+            <h4>质检评价</h4>
+            <p>通过接待过程质量自动评定，关键业务开口率可视化呈现</p>
+          </li>
+          <li>
+            <img src="./img/four_icon2.png" alt="" class="icon">
+            <h4>客户洞察</h4>
+            <p>基于上百万小时语音训练积累，自动分析客户消费心理及成交等级</p>
+          </li>
+          <li>
+            <img src="./img/four_icon3.png" alt="" class="icon">
+            <h4>热点问题</h4>
+            <p>通过算法模型提炼客户关注点，及时获取用户偏好需求</p>
+          </li>
+          <li>
+            <img src="./img/four_icon4.png" alt="" class="icon">
+            <h4>风控合规</h4>
+            <p>识别接待过程出现的敏感信息，接待过程风险管理可控</p>
+          </li>
+        </ul>
+      </div>
+      <div class="tit movePage2">
+        <h3>应用场景</h3>
+      </div>
+      <div class="cjBox">
+        <img src="./img/cj_bg1.png" alt="">
+        <img src="./img/cj_bg2.png" alt="">
+        <img src="./img/cj_bg3.png" alt="">
+        <img src="./img/cj_bg4.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="w1200 byPc">
+    <div class="tit movePage3">
+      <h3>系统架构</h3>
+    </div>
+    <div class="ipadBox">
+      <img src="./img/ipad_bg.svg" alt="">
+    </div>
+  </div>
+  <div class="blackBox byPc">
+    <div class="w1280">
+      <div class="tit movePage4">
+        <h3>多角色应用</h3>
+      </div>
+      <div class="threeDiv">
+        <div class="w412 bg1">
+          <h4>主机厂</h4>
+          <p>需求调研反馈  高效密采明采<br>竞品监测分析  战略决策研判</p>
+        </div>
+        <div class="w412 bg2">
+          <h4>经销商</h4>
+          <p>潜客用户画像  客观管理看板<br>业务开口追踪  合规风险管理</p>
+        </div>
+        <div class="w412 bg3">
+          <h4>店内管理</h4>
+          <p>业务能力提升  接待过程复盘<br>成交战败分析  客户关注提取</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w1100 byPc">
+    <div class="tit">
+      <h3>合作案例</h3>
+    </div>
+    <div class="numBox">
+      <img src="./img/num_icon1.png" alt="">
+      <img src="./img/num_icon2.png" alt="">
+      <img src="./img/num_icon3.png" alt="">
+    </div>
+    <div class="logoBox">
+      <img src="./img/logo01.png" alt="">
+      <img src="./img/logo02.png" alt="">
+      <img src="./img/logo03.png" alt="">
+      <img src="./img/logo04.png" alt="">
+      <img src="./img/logo05.png" alt="">
+      <img src="./img/logo06.png" alt="">
+      <img src="./img/logo07.png" alt="">
+      <img src="./img/logo08.png" alt="">
+      <img src="./img/logo09.png" alt="">
+      <img src="./img/logo10.png" alt="">
+      <img src="./img/logo11.png" alt="">
+      <img src="./img/logo12.png" alt="">
+      <img src="./img/logo13.png" alt="">
+      <img src="./img/logo14.png" alt="">
+      <img src="./img/logo15.png" alt="">
+      <img src="./img/logo16.png" alt="">
+      <img src="./img/logo17.png" alt="">
+      <img src="./img/logo18.png" alt="">
+      <img src="./img/logo19.png" alt="">
+      <img src="./img/logo20.png" alt="">
+    </div>
+  </div>
+
+  <div class="w1200 byPhone">
+    <div class="tit">
+      <h3>系统架构</h3>
+    </div>
+    <div class="btns">
+      <div class="btn active">方案一：IPAD</div>
+      <div class="btn">方案二：手机+录音笔</div>
+    </div>
+    <div class="box box1">
+      <img src="./img/box1_bg1.png" alt="">
+      <span class="more" onclick="$('.box1_bg2').show();$(this).hide()">查看更多</span>
+      <img class="hide box1_bg2" src="./img/box1_bg2.png" alt="">
+    </div>
+    <div class="box box2">
+      <img src="./img/box2_bg1.png" alt="">
+      <span class="more" onclick="$('.box2_bg2').show();$(this).hide()">查看更多</span>
+      <img class="hide box2_bg2" src="./img/box2_bg2.png" alt="">
+    </div>
+  </div>
+  <div class="blackBox byPhone">
+    <div class="w1280">
+      <div class="tit">
+        <h3>多角色应用</h3>
+      </div>
+      <div class="threeDiv">
+        <div class="w412 bg1">
+          <h4>主机厂</h4>
+          <p>需求调研反馈  高效密采明采<br>竞品监测分析  战略决策研判</p>
+        </div>
+        <div class="w412 bg2">
+          <h4>经销商</h4>
+          <p>潜客用户画像  客观管理看板<br>业务开口追踪  合规风险管理</p>
+        </div>
+        <div class="w412 bg3">
+          <h4>店内管理</h4>
+          <p>业务能力提升  接待过程复盘<br>成交战败分析  客户关注提取</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w1100 byPhone">
+    <div class="tit">
+      <h3>合作案例</h3>
+    </div>
+    <div class="numBox">
+      <img src="./img/num_bg.png" alt="">
+    </div>
+    <div class="swiper mySwiper">
+      <div class=" swiper-wrapper">
+        <div class=" swiper-slide">
+          <div class="flexBox">
+            <img src="./img/logo01.png" alt="">
+            <img src="./img/logo02.png" alt="">
+            <img src="./img/logo03.png" alt="">
+            <img src="./img/logo06.png" alt="">
+            <img src="./img/logo07.png" alt="">
+            <img src="./img/logo08.png" alt="">
+            <img src="./img/logo11.png" alt="">
+            <img src="./img/logo12.png" alt="">
+            <img src="./img/logo13.png" alt="">
+            <img src="./img/logo16.png" alt="">
+            <img src="./img/logo17.png" alt="">
+            <img src="./img/logo18.png" alt="">
+          </div>
+        </div>
+        <div class=" swiper-slide">
+          <div class="flexBox">
+            <img src="./img/logo02.png" alt="">
+            <img src="./img/logo03.png" alt="">
+            <img src="./img/logo04.png" alt="">
+            <img src="./img/logo07.png" alt="">
+            <img src="./img/logo08.png" alt="">
+            <img src="./img/logo09.png" alt="">
+            <img src="./img/logo12.png" alt="">
+            <img src="./img/logo13.png" alt="">
+            <img src="./img/logo14.png" alt="">
+            <img src="./img/logo16.png" alt="">
+            <img src="./img/logo17.png" alt="">
+            <img src="./img/logo18.png" alt="">
+          </div>
+        </div>
+        <div class=" swiper-slide">
+          <div class="flexBox">
+            <img src="./img/logo03.png" alt="">
+            <img src="./img/logo04.png" alt="">
+            <img src="./img/logo05.png" alt="">
+            <img src="./img/logo08.png" alt="">
+            <img src="./img/logo09.png" alt="">
+            <img src="./img/logo10.png" alt="">
+            <img src="./img/logo13.png" alt="">
+            <img src="./img/logo14.png" alt="">
+            <img src="./img/logo15.png" alt="">
+            <img src="./img/logo18.png" alt="">
+            <img src="./img/logo19.png" alt="">
+            <img src="./img/logo20.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+<!--aboutBox end-->
+<div id="footer-wrap"></div>
+<script src="//cdn.yunshicloud.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="../../common/js/base.js"></script>
+<script src="../../common/js/main.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script>
+  function movePage(el) {
+    $("html, body").stop().animate({
+        scrollTop: $(el).offset().top
+    }, 500);
+  }
+  $(".btns .btn").click(function() {
+    $(this).addClass("active").siblings().removeClass("active")
+
+    if ($(this).index() == 0) {
+      $(".box1").show().siblings(".box2").hide()
+    } else {
+      $(".box2").show().siblings(".box1").hide()
+    }
+  })
+</script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+</script>
+</body>
+</html>

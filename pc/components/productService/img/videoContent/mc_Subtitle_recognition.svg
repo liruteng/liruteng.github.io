@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>字幕</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="官网" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-194.000000, -1851.000000)" fill-rule="nonzero">
+            <g id="字幕" transform="translate(194.000000, 1851.000000)">
+                <path d="M22.5,1 C10.6258779,1 1,10.6258779 1,22.5 C1,34.3741221 10.6258779,44 22.5,44 C34.3741221,44 44,34.3741221 44,22.5 C44,16.7978455 41.7348279,11.3292363 37.7027958,7.2972042 C33.6707637,3.26517207 28.2021545,1 22.5,1 Z" id="Shape" stroke="#3C3C3C" stroke-width="2"></path>
+                <path d="M11.2727273,31.0192308 L34.4807692,31.0192308 L34.4807692,14 L11.2727273,14 L11.2727273,31.0192308 Z M12.4942032,15.2156593 L33.2592933,15.2156593 L33.2592933,29.8035714 L12.4942032,29.8035714 L12.4942032,15.2156593 Z M19.0087413,19.9022921 L22.6557193,19.9022921 L22.6557193,27.1512238 L23.8713786,27.1512238 L23.8713786,19.9022921 L27.5183566,19.9022921 L27.5183566,18.6416084 L19.0087413,18.6416084 L19.0087413,19.9022921 Z" id="Combined-Shape" fill="#E71A22"></path>
+            </g>
+        </g>
+    </g>
+</svg>

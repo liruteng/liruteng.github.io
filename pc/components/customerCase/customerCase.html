@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>客户案例</title>
+    <link rel="icon" type="image/x-icon" href="../../common/images/favicon.ico">
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <link rel="stylesheet" href="../../common/css/base.css">
+    <link rel="stylesheet" href="css/custonmerCase.css">
+</head>
+<body>
+<div id="header-wrap"></div>
+<div class="sc_case_banner">
+    <!-- <img src="img/list_pic1.jpg" alt="图片"> -->
+    <img src="img/list_pic2.png" alt="图片">
+</div>
+<div class="container" id="case">
+    <div class="container_box" v-for="(t, i) in newsData" :key="i">
+        <div class="container_tit" >
+            {{t.lv}}
+        </div>
+        <ul class="sc_list clearfloat" >
+            <li v-for="(it,ii) in t.list" :key="ii">
+                <a :href="it.contentHtml" class="swiper-slide list_swp_item swiper-slide-active" data-swiper-column="0" data-swiper-row="0" style="order: 0; width: 238.75px; margin-right: 15px;">
+                    <div class="list_swp_item_pic">
+                        <img :src="it.img" alt="图片"></div>
+                    <div class="list_swp_item_cloud">{{it.title}}</div>
+                    <div class="list_swp_item_Industry_field"><span>{{it.type}}</span>
+                        {{it.hy}}
+                    </div>
+                    <div class="list_swp_item_synopsis" v-html="it.content"></div>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+</div>
+<div id="footer-wrap"></div>
+</body>
+<script src="//cdn.yunshicloud.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdn.yunshicloud.com/vue/2.5.16/vue.min.js"></script>
+<script src="../../common/js/base.js"></script>
+<script src="../../common/js/main.js"></script>
+<script>
+   var vm = new Vue({
+        el:'#case',
+        data:{
+            newsData: []
+        },
+        mounted(){
+            this.getData()
+        },
+        methods:{
+          getData(){
+              const self = this
+              $.ajax({
+                  url:"../../config/customerCase.json",
+                  dataType: "json",
+                  success:function (data) {
+                      self.newsData  = data.data;
+                      console.log(self.newsData)
+                  }
+              })
+          }
+        }
+
+    })
+    // $(function () {
+    //     $.ajax({
+    //         url:"../../config/customerCase.json",
+    //         dataType: "json",
+    //         success:function (data) {
+    //             var  string = '';
+    //             var datas = data.data;
+    //             datas.forEach(function (val,i) {
+    //                        string += '<li>' +
+    //                                '<a href="'+datas[i].contentHtml+'" class="swiper-slide list_swp_item swiper-slide-active" data-swiper-column="0" data-swiper-row="0" style="order: 0; width: 238.75px; margin-right: 15px;">'+
+    //                                '<div class="list_swp_item_pic"><img src="'+datas[i].img+'" alt="图片"></div>'+
+    //                                '<div class="list_swp_item_cloud">'+datas[i].title+'</div>'+
+    //                                '<div class="list_swp_item_Industry_field"><span>'+datas[i].type+'：</span>'+datas[i].hy+
+    //                                '</div>'+
+    //                                '<div class="list_swp_item_synopsis">'+datas[i].content+'</div>'+
+    //                                '</a>'+
+    //                                '</li>'
+    //             })
+    //             $(".sc_list").html(string);
+    //         }
+    //     })
+    // })
+
+</script>
+</html>

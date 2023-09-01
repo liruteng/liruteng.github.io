@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>新闻动态</title>
+    <meta name="keywords" content="yunshicloud"/>
+    <meta name="description" content="yunshicloud"/>
+    <meta name="format-detection" content="telephone=no">
+    <!-- /etc/htmlhead.shtml Start -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <link rel="icon" type="image/x-icon" href="../../common/images/favicon.ico">
+    <link class="css_style" rel="stylesheet" href="../Solution/css/list_style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="../../common/css/list_style.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="../../common/css/base.css">
+    <meta name="author" content="yh 2921" />
+    <!-- /sn/htmlhead.shtml End -->
+</head>
+
+<body>
+<!-- /etc/header.shtml start -->
+<!--header-wrap start-->
+<div id="header-wrap">
+
+</div>
+<!--header-wrap end-->
+<!-- /etc/header.shtml end -->
+<!--aboutBox start-->
+<div class="aboutBox">
+    <div class="maxWidth">
+        <img class="aboutBanner" src="img/m-about.jpg"  alt="图片">
+    </div><!--/aboutLeft-->
+    <!-- <div class="news_trends_banner"><img src="img/news_trends_banner-1.jpg" alt="图片"></div> -->
+    <div class="news_trends_banner"><img src="img/news_trends_banner-4.png" alt="图片"></div>
+    <div class="aboutRight" id="sc_app">
+        <div class="maxWidth">
+            <div class="newsBox">
+                <div class="aboutIntro">
+                    <h3 class="tie">新闻动态</h3>
+                </div>
+                <ul class="commonList" v-if="datas.length>0">
+                    <li class="news-item-trends" v-for="(item,index) in newdatas" :key="index" v-cloak>
+                        <div class="date">
+                            <strong>{{item.day | getLunarDay(item.day)}}</strong>{{item.day | getYear(item.day)}}
+                        </div>
+                        <div class="txt">
+                            <h4><a :href="interceptAddress(item.contentHtml)" target="_self" v-html="item.title"></a></h4>
+                            <p><a :href="interceptAddress(item.contentHtml)" target="_self" v-html="item.content"></a></p>
+                        </div>
+                    </li>
+
+                </ul>
+                <div v-else>
+                    <p class="sc_tip">正在加载中...</p>
+                </div>
+                <div id="page">
+                    <div class="block" v-if='datas.length'>
+                        <el-pagination
+                                @size-change="handleSizeChange"
+                                @current-change="handleCurrentChange"
+                                :current-page="currentPage4"
+                                :page-size="curSize"
+                                layout="prev, pager, next,total"
+                                :total="datas.length">
+                        </el-pagination>
+                    </div>
+
+                </div>
+                <!--<div class="pages">-->
+                    <!--<div id="chan_multipageNumN"><span class="curPage">1</span><a href="/news/index_1.html" target="_self">2</a><a href="/news/index_2.html" target="_self">3</a><a href="/news/index_3.html" target="_self">4</a><span>...</span><a href="/news/index_1.html" class="nextPage" title="下页" target="_self">下页</a><a href="/news/index_5.html" class="lastPage" title="尾页" target="_self">尾页</a><span class="sumPage">共<cite> 6 </cite>页</span></div>-->
+                <!--</div>-->
+
+            </div>
+        </div>
+    </div><!--/aboutRight-->
+</div>
+<!--</div>-->
+<!--</div>-->
+<!--aboutBox end-->
+
+<!-- /etc/footer.shtml Start -->
+<!--footer-wrap start-->
+<div id="footer-wrap">
+
+</div>
+<!--footer end-->
+
+<script src="//cdn.yunshicloud.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdn.yunshicloud.com/vue/2.5.16/vue.min.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<!--<script src="../../common/js/main.js"></script>-->
+<script src="../../common/js/base.js"></script>
+<script src="js/VueFilter.js"></script>
+<script src="../../common/js/main.js"></script>
+<script src="js/news.js?zl=30"></script>
+<!--<script src="../Solution/js/main.js"></script>-->
+<!-- /etc/footer.shtml End -->
+</body>
+</html>

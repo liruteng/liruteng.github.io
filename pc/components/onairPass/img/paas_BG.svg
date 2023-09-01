@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="689px" height="483px" viewBox="0 0 689 483" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>BG</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.1">
+        <g id="PAAS" transform="translate(0.000000, -2408.000000)" fill="#A7CDC8" fill-rule="nonzero">
+            <path d="M636,2408 C605.59069,2509.77635 543.826779,2551.38193 450.708267,2532.81674 C311.030499,2504.96896 366.79819,2577.68974 307.807099,2601.9836 C231.63298,2633.35383 219.824142,2618.76618 121.739649,2643.59686 C90.963346,2651.38807 56.683703,2712.07764 62.673682,2749.58734 C77.314285,2841.26792 40.0006358,2833.2898 13.4113445,2843.1474 C-4.3148497,2849.71914 -26.1186312,2865.67001 -52,2891 L689,2891 L689,2467.96789 L636,2408 Z" id="BG" transform="translate(318.500000, 2649.500000) scale(-1, 1) translate(-318.500000, -2649.500000) "></path>
+        </g>
+    </g>
+</svg>

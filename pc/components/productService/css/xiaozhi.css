@@ -1,0 +1,105 @@
+.sw-service-banner-live{
+    background-image: url("../img/xiaozhi/mc_xiaozhi_bg.png");
+}
+.service-scene .sw-img{
+    width: 60%;
+    background-color: #f7f7f7;
+    padding-top: 52px;
+    padding-bottom: 34px;
+}
+.sw-service-scene-ul-wrap{
+    width: 38%;
+}
+.sw-service-scene-ul li {
+    margin-bottom: 18px;
+    /*background: url(../img/service/dot-red.png) no-repeat 0 10px;*/
+}
+.sw-service-scene-ul li h4{
+    font-size: 16px;
+    color: #1E1E1E;
+    font-weight: bold;
+    position: relative;
+    padding-left: 20px;
+}
+.sw-service-scene-ul li h4:after{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #E71A22;
+    position: absolute;
+    left: 7px;
+    top: 9px;
+    content: '';
+    /*content: url("../img/service/dot-red.png");*/
+}
+.sw-service-scene-ul li p{
+    color: #3C3C3C;
+    font-size: 14px;
+    margin-top: 14px;
+}
+.sw-service-describe{
+    font-size: 14px;
+    color: #3C3C3C;
+    line-height:21px;
+    margin-bottom: 26px;
+}
+.sw-case-wrap h4{
+    margin-bottom: 24px;
+    font-size: 18px;
+    color: #1E1E1E;
+}
+.sw-case-wrap img{
+    height: 60px;
+}
+.sw-case-wrap .service-advant-ul .advant-ico{
+    min-width: 52px;
+}
+.mc_service_con .service-advant-ul .advant-ico{
+    background-position: 0 0;
+    min-width: 52px;
+}
+.mc_service_con .service-advant-ul .advant-ico-1{
+    background-image: url("../img/xiaozhi/Rich_in_function.svg");
+}
+.mc_service_con .service-advant-ul .advant-ico-2{
+    background-image: url("../img/xiaozhi/mc_jingzhaun.svg");
+}
+.mc_service_con .service-advant-ul .advant-ico-3{
+    background-image: url("../img/xiaozhi/mc_jicheng.svg");
+}
+.mc_service_con .service-advant-ul .advant-ico-4{
+    background-image: url("../img/xiaozhi/mc_gaoxiao.svg");
+}
+.service-fun-tab .fun-ico{
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+.mc_service_con .service-fun-tab .fun-ico-1{
+    background-image: url(../img/xiaozhi/mc_zhishiku.svg);
+}
+.mc_service_con .service-fun-tab .fun-ico-2{
+    background-image: url(../img/xiaozhi/mc_shenhe.svg);
+}
+.mc_service_con .service-fun-tab .fun-ico-3{
+    background-image: url(../img/xiaozhi/mc_fanyi.svg);
+}
+.mc_service_con .service-fun-tab .fun-ico-4{
+    background-image: url(../img/xiaozhi/mc_shiwen.svg);
+}
+.mc_service_con .service-fun-tab .fun-ico-5{
+     background-image: url(../img/xiaozhi/mc_shibie.svg);
+}
+.mc_service_con .service-fun-tab .fun-ico-6{
+    background-image: url(../img/xiaozhi/mc_peiyin.svg);
+}
+.mc_service_scene{
+    padding-bottom: 45px;
+}
+.sw-img img{
+    width: 100%;
+}
+.service-advant-ul li p{
+    overflow: visible;
+    height: auto;
+}

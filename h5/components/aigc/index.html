@@ -4,19 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首页</title>
-    <link rel="stylesheet" href="../swiper/swiper.min.css">
+    <title>智能工坊</title>
     <script src="./rem.js"></script>
     <style>
         *{
             padding: 0;
             margin: 0;
-            box-sizing: border-box;
-        }
-        img{
-            padding: 0;
-            margin: 0;
-            display: block;
         }
         a{
             text-decoration: none;
@@ -37,10 +30,15 @@
         a:focus {
             text_decoration: none;
         }
+        img{
+            padding: 0;
+            margin: 0;
+            display: block;
+        }
         .view{
             width: 100%;
             min-height: 100vh;
-            background-color: #f7f7f7;
+            background-color: #eee;
             font-size: 16px;
         }
         .header{
@@ -72,7 +70,7 @@
         .banner{
             width: 100%;
             min-height: 4.2rem;
-            background-image: url(./img/index/组\ 13.png);
+            background-image: url(./img/IntelligentWork/banner-bg@2x.png);
             background-size: 100% 100%;
         }
         .banner-text{
@@ -87,140 +85,188 @@
             padding-bottom: .16rem;
         }
         .banner-text-text{
-            width: 123%;
-            font-size: .24rem;
-            padding-bottom: .02rem;
-            transform: scale(.8,.8);
-            transform-origin: left top;
+            font-size: .23rem;
+            padding-bottom: .04rem;
         }
-        .fulter{
+        .advantage{
             width: 100%;
-            padding: .4rem;
+            box-sizing: border-box;
+            padding: .3rem .4rem .1rem;
         }
-        .title{
-            width: 100%;
-            margin-bottom: .16rem;
-        }
-        .title-name{
-            text-align: center;
-            font-size: .34rem;
-        }
-        .title-text{
-            text-align: center;
-            font-size: .24rem;
-            color: #8c8c8c;
-            transform: scale(.8,.8);
-        }
-        .fulter-select{
-            width: 100%;
-        }
-        .select-title{
-            width: 100%;
-            font-size: .27rem;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.16);
-            border: 1px solid #eaeaea;
-            padding: .17rem .29rem;
-            margin-bottom: .18rem;
-            z-index: 99;
-        }
-        .select-title>div{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .select-title a>div{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .select-title>div img{
-            width: .57rem;
-            height: .4rem;
-            margin-right: .2rem;
-        }
-        .select-title .updown{
-            width: .24rem;
-            height: .14rem;
-        }
-        .select-content{
-            width: 100%;
-            /* display: flex; */
-            /* flex-direction: column; */
-            /* justify-content: flex-end; */
-            /* align-content: center; */
-            border-left: .01rem solid #e8e8e8;
-            border-right: .01rem solid #e8e8e8;
-            /* margin-top: -0.18rem; */
-        }
-        .select-view{
-            width: 90%;
-            position: absolute;
-            right: 0;
-            /* display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-content: center; */
-        }
-        .select-view>div{
-            padding: .28rem .19rem;
-            border-bottom: .01rem solid #e8e8e8;
-            border-left: .04rem solid transparent;
-        }
-        .select-view .select-view-first{
-            border-left: .04rem solid #fd0000;
-            background-color: #fffaf9;
-        }
-        .select-list.active{
-            border-left: .04rem solid #fd0000;
-            background-color: #fffaf9;
-            
-        }
-        .select-list.active .select-name{
-            color: #fd0000;
-        }
-        .select-name{
-            font-size: .27rem;
-            font-weight: 500;
-            margin-bottom: .1rem;
-        }
-        .select-text{
-            color: #919292;
-            font-size: .24rem;
-            transform: scale(.86,.86);
-            transform-origin: left top;
-            width: 117%;
-        }
-        .case{
-            width: 100%;
-            padding: .4rem 0;
+        .advantage-content{
+            min-height: 3rem;
+            box-sizing: border-box;
+            padding: .4rem .22rem .22rem .24rem;
+            background-image: url(./img/IntelligentWork/1.png);
+            background-size: 100% 100%;
+            box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.16);
+            border-radius: .1rem;
             overflow: hidden;
         }
-        .swiper,.swiper1{
+        .advantage-title{
+            font-size: .34rem;
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: .16rem;
+        }
+        .advantage-name{
+            font-size: .26rem;
+            font-weight: 500;
+            margin-bottom: .08rem;
+        }
+        .advantage-content .advantage-text{
+            font-size: .14rem;
+            color: #727272;
+        }
+        .advantage-text p{
+            transform-origin:left top ;
+            transform: scale(.9,.9);
+            width: 114%;
+        }
+        .advantage-view{
+            display: flex;
+            justify-content: space-between;
+        }
+        .advantage-left{
+            width: 47%;
+        }
+        .advantage-right{
+            width: 49%;
+        }
+        /* .advantage-bottom{
+            padding-bottom: .2rem;
+        } */
+        .product{
+            padding: .4rem .4rem 0;
+        }
+        .product-title,.basics-title{
+            text-align: center;
+            font-size: .34rem;
+            font-weight: 500;
+            margin-bottom: .32rem;
+        }
+        .product-content{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: .19rem;
+        }
+        .product-left,.product-right{
+            width: 49%;
+            height: 2.8rem;
+            padding: .3rem .2rem .2rem;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: .14rem;
+        }
+        .product-right{
+            margin-left: .09rem;
+        }
+        .bg1{
+            background-image: url(./img/IntelligentWork/2-1.png);
+            background-size: 100% 100%;
+        }
+        .bg2{
+            background-image: url(./img/IntelligentWork/2-2.png);
+            background-size: 100% 100%;
+        }
+        .bg3{
+            background-image: url(./img/IntelligentWork/2-3.png);
+            background-size: 100% 100%;
+        }
+        .bg4{
+            background-image: url(./img/IntelligentWork/2-4.png);
+            background-size: 100% 100%;
+        }
+        .bg5{
+            background-image: url(./img/IntelligentWork/2-5.png);
+            background-size: 100% 100%;
+        }
+        .bg6{
+            background-image: url(./img/IntelligentWork/2-6.png);
+            background-size: 100% 100%;
+        }
+        .product-top{
+            font-size: .27rem;
+            font-weight: 500;
+        }
+        .product-text{
+            color: #666;
+            font-size: .24rem;
+            width: 120%;
+        }
+        .product-text p{
+            transform-origin: left top;
+            transform: scale(.8,.8);
+        }
+        .bg5 .product-text p{
+            width: 104%;
+        }
+        .product-btn{
+            height: .3rem;
+            width: 1rem;
+            background-color: #db0000;
+            text-align: center;
+            line-height: .3rem;
+            /* font-size: .013rem; */
+            color: #fdf5f5;
+        }
+        .product-btn p{
+            font-size: .24rem;
+            width: 101%;
+            transform: scale(.8,.8);
+        }
+        .default{
+            background-color: #d9d9d9;
+            color: #fdf5f5;
+        }
+        .basics-title{
+
+        }
+        .basics-top,.basics-bottom{
             width: 100%;
-            min-height: 1rem;
-            /* background-color: rgb(203, 203, 237); */
-            margin: .18rem;
+            min-height: 2.08rem;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding: .26rem .56rem .2rem .6rem;
         }
-        .swiper-slide{
-            width: 2.82rem !important;
-            height: 1.2rem;
-            /* background-color: red; */
-            margin: .06rem .13rem;
+        .basics-top{
+            background-image: url(./img/IntelligentWork/3-1.png);
+            background-size: 100% 100%;
+            margin-bottom: .2rem;
         }
-        .swiper-slide img{
-            width: 2.82rem;
-            height: 1.1rem;
-            box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.16);
+        .basics-bottom{
+            background-image: url(./img/IntelligentWork/3-2.png);
+            background-size: 100% 100%;
         }
-        .swiper1{
-            transform: rotate(180deg);
+        .basics-name{
+            font-size: .26rem;
+            font-weight: 500;
         }
-        .swiper1 .swiper-slide{
-            transform: rotate(180deg);
+        .basics-text{
+            width: 100%;
+            color: #727273;
+            font-size: .24rem;
+        }
+        .basics-text p{
+            transform: scale(.85,.85);
+            transform-origin: left top;
+            width: 118%;
+        }
+        .basics-img{
+            height: .32rem;
+            position: relative; 
+        }
+        .basics-img img{
+            height: .32rem;
+            position: absolute;
+            right: 0;
+        }
+        .img2 img{
+            height: .34rem;
         }
         .contact{
             width: 100%;
@@ -263,434 +309,179 @@
         .small,.bot-img{
             transform: scale(.7,.7);
         }
-        .select-div{
-            min-height: .9rem;
-            overflow: hidden;
-            transition: height 0.5s ease;
+        .product-content>div.active .product-top{
+            color: #db0000;
         }
-        .updown.updownActive{
-            transform: rotate(180deg);
-        }
-        .select-content{
-            /* height: 0;
-            overflow: hidden; */
-            transition: height 0.5s ease;
-            position: relative;
-            display: none;
-        }
-        .select-content.active{
-            /* overflow: visible; */
-            /* min-height:10.6rem; */
-            display: block;
-        }
-        .select-content1{
-            height: 10.6rem;
-        }
-        .select-content2{
-            height: 10.6rem;
-        }
-        .select-content3{
-            height: 14.2rem;
-        }
-        .select-content4{
-            height: 6.8rem;
-        }
-        .select-content5{
-            height: 8.6rem;
-        }
+    </style>
 
-    </style> 
 </head>
 <script src="https://www.yunshicloud.com/common/js/deviceType.js"></script>
 <body>
     <div class="view">
         <div class="header">
             <div class="header-left">
-                <img src="./img/IntelligentWork/logo@2x.png" alt="">
+                <a href="../../index.html">
+                    <img src="./img/IntelligentWork/logo@2x.png" alt="">
+                </a>
             </div>
             <div class="header-right">
-                <img src="./img/IntelligentWriting/矢量智能对象@2x.png" alt="">
+                <a href="../../index.html">
+                    <img src="./img/IntelligentWriting/矢量智能对象@2x.png" alt="">
+                </a>
             </div>
         </div>
         <div class="banner">
             <div class="banner-text">
-                <p class="banner-text-title">阳光云视 •AIGC</p>
-                <p class="banner-text-text" style="line-height: 0.36rem;">阳光云视秉持“面向应用，深耕技术”的发展理念，在数以千计的用户实践中，积累了大量的实战经验，并打下了坚实的技术基础。开创性的将AI大模型行业的发展成果与媒体运营实践相结合，率先完成媒体大模型的框架搭建，助力用户轻松走进新一代Al世界</p>
+                <p class="banner-text-title">AIGC智能工坊</p>
+                <p class="banner-text-text" style="line-height: 0.36rem;">智能写稿｜智能成片｜数字孪生H5创意工坊｜智能工具集虚拟兵团</p>
             </div>
         </div>
-        <div class="fulter">
-            <div class="title">
-                <div class="title-name">AIGC智造未来</div>
-                <div class="title-text">安全｜稳定｜高效</div>
-            </div>
-            <div class="fulter-select">
-                <div class="select-div">
-                    <div class="select-title select-title1">
-                        <!-- <a href="./workshop.html"> -->
-                            <div>
-                                <img src="./img/index/1-1.png" alt="">
-                                <div>AIGC创意工坊</div>
-                            </div>
-                        <!-- </a> -->
-                        <img src="./img/index/向下.png" alt="" class="updown updown1 updownActive">
-                       
-                        
-                    </div>
-                    <div class="select-content select-content1 active">
-                        <div class="select-view">
-                            <div class="select-list active">
-                                <a href="./IntelligentWriting.html">
-                                    <div class="select-name">智能写稿</div>
-                                </a>
-                                <div class="select-text">具备一键成文、长文缩编、自动标题、要点提取等多项功能，有效提升文字工作效率。同时提供私有数据训练能力，助力形成自有文字风格</div>
-                               
-                            </div>
-                            <div class="select-list">
-                                <a href="./oneClick.html">
-                                    <div class="select-name">智能成片</div>
-                                </a>
-                                <div class="select-text">基于多模态大模型能力，支持自动成片、长视频缩编等多种应用场景，具备二次编辑能力，可预设多种模版，有效提升视频生成效率</div>
-                            </div>
-                            <div class="select-list">
-                                <a href="./numeral.html">
-                                    <div class="select-name">数字人</div>
-                                </a>
-                                <div class="select-text">便捷的数字人建模与应用工具，方便用户快速建立海量内容生产能力，有效应对运营成本压力</div>
-                            </div>
-                            <div class="select-list">
-                                <a href="./workshop.html">
-                                    <div class="select-name">H5创意工坊</div>
-                                </a>
-                                <div class="select-text">一站式H5生成工具，丰富的模版库，支持音视图文等多媒体形态</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">智能工具集</div>
-                                <div class="select-text">提供智能修图、上变换转码、智能审核、视频编辑等丰富的工具，方便用户一站式解决所有问题</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">虚拟兵团</div>
-                                <div class="select-text">方便媒体机构规模化运营，有效降低运营成本</div>
-                            </div>
+        <div class="advantage">
+            <div class="advantage-content">
+                <div class="advantage-title">优势</div>
+                <div class="advantage-view">
+                    <div class="advantage-left">
+                        <div class="advantage-name">
+                            可信赖的意识形态
                         </div>
-                        
+                        <div class="advantage-text">
+                            <p>基于官方媒体的可信赖数据，确保各项应用的底层模型具备可靠的意识形态，同时用户可使用私有数据对模型做更深入微调，以形成自身独有风格</p>
+                        </div>
+                    </div>
+                    <div class="advantage-right">
+                        <div class="advantage-name">
+                            贴近行业应用的产品设计
+                        </div>
+                        <div class="advantage-text">
+                            <p>需求来源于第一线，所有产品设计遵循一线采编人员的工作习惯，降低使用门槛，不增加额外学习成本</p>
+                        </div>
                     </div>
                 </div>
-                <div class="select-div">
-                    <div class="select-title select-title2">
-                        <div>
-                            <img src="./img/index/1-2.png" alt="">
-                            <div>ONAIR PaaS 3.0</div>
-                        </div>
-                        <img src="./img/index/向下.png" alt="" class="updown updown2">
+                <div class="advantage-bottom">
+                    <div class="advantage-name">
+                        灵活的获取方式
                     </div>
-                    <div class="select-content select-content2">
-                        <div class="select-view">
-                            <div class="select-list active">
-                                <div class="select-name">API网关</div>
-                                <div class="select-text">通过API网关，进一步增强平台的开放性，快速的集成服务和应用(含第三方)，覆盖API的注册、测试、发布整个生命周期</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">自动化运维监控</div>
-                                <div class="select-text">保障平台高可用并提升稳定性，提供丰富的监测和应急手段，建立自动化运维体系，自动化监控，快速定位问题、及时恢复业务</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">AI智能服务</div>
-                                <div class="select-text">多种AI能力，为业务提供更高效智能的处理手段, 感知增强编码提供更高画质，卷积神经网络算法应用于智能鉴定视频</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">平台容器化</div>
-                                <div class="select-text">引入对于容器的支持，平台既支持虚拟化部署又支持容器化部署;使用更轻量化，启动速度快，性价比极高</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">DevOps( 开发运维一体化)</div>
-                                <div class="select-text">DevOps开发模式提升工作效率，各环节都通过工具驱动，开发完成后，自动打包，自动化测试，自动化部署或升级</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">laaS层资源管理</div>
-                                <div class="select-text">提供对laaS层资源的统一管控调度，具备私有云和公有云同构能力，可实现对于异构平台的统一管理</div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="select-div">
-                    <div class="select-title select-title3">
-                        <div>
-                            <img src="./img/index/1-3.png" alt="">
-                            <div>媒体云</div>
-                        </div>
-                        <img src="./img/index/向下.png" alt="" class="updown updown3">
-                    </div>
-                    <div class="select-content select-content3">
-                        <div class="select-view">
-                            <div class="select-list active">
-                                <div class="select-name">新闻媒体生产服务</div>
-                                <div class="select-text">基于PC和APP双终端，发挥其各自优势，完成了从线索采集、文稿编写到审核发布成品新闻的全流程工艺，帮助媒体机构增强新闻传播的公信力、传播力和影响力</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">媒体内容交换服务</div>
-                                <div class="select-text">为媒体机构之间快速交换新闻、影视剧等多种媒体内容的云服务，支持机构间多场景的交换方式，实现省、市媒体之间的新闻通联</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">媒体内容发布服务</div>
-                                <div class="select-text">针对自有的新闻微站、APP等客户端，接管微信微博、百家、企鹅等不同渠道，文稿实现一键分发多终端，针对不同发布渠道，满足用户灵活发布、多应用管控、矩阵发布等多种业务需求</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">多来源汇聚服务</div>
-                                <div class="select-text">在媒体融合背景下，充分发挥互联网、大数据技术优势，助力媒体机构实现互联网数据、UGC内容及电视IP信号流等多来源的内容汇聚</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">Vision Box</div>
-                                <div class="select-text">结合电视节目、媒体活动，提供多种互动形式模板，如投票、抽奖、时间轴等，丰富融合媒体的内容和展示形式，强化内容与用户间的互动性</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">运营服务</div>
-                                <div class="select-text">除通过技术平台提供融媒体中心应用服务和产品以外，同时提供了多个运营服务，用更高效的方式、更低的成本快速展现融媒体的传播效果</div>
-                            </div> 
-                            <div class="select-list">
-                                <div class="select-name">媒体策划指挥</div>
-                                <div class="select-text">全新规划选题策划、新闻调度、采访任务指派等业务流程，统筹线索、选题、采访任务、资源调度、生产发布所有环节</div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="select-div">
-                    <div class="select-title select-title4">
-                        <div>
-                            <img src="./img/index/1-4.png" alt="">
-                            <div>智能云媒资</div>
-                        </div>
-                        <img src="./img/index/向下.png" alt="" class="updown updown4">
-                    </div>
-                    <div class="select-content select-content4">
-                        <div class="select-view">
-                            <div class="select-list active">
-                                <div class="select-name">海量资料有效存储</div>
-                                <div class="select-text">主题式融合媒体资产的保存和再利用采集、编目、归档、发布、检索推荐全流程应用</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">泛行业普遍应用</div>
-                                <div class="select-text">企事业单位上传、下发、共享资源平行机关间的资源交换、共享</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">多维挖掘价值内容</div>
-                                <div class="select-text">互联网感知，热点、重点内容智能推荐;用户+内容感知，关联推荐和智能搜索</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">内容运营变现</div>
-                                <div class="select-text">一键发布至头条系( 含抖音 )、阿里系、腾讯系、百度系等多个流量平台</div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="select-div">
-                    <div class="select-title select-title5">
-                        <div>
-                            <img src="./img/index/1-5.png" alt="">
-                            <div>听鉴云</div>
-                        </div>
-                        <img src="./img/index/向下.png" alt="" class="updown updown5">
-                    </div>
-                    <div class="select-content select-content5">
-                        <div class="select-view">
-                            <div class="select-list active">
-                                <div class="select-name">销售过程录音采集</div>
-                                <div class="select-text">支持通过iPad&APP或智能工牌&APP方案对销售过程录音及客户信息进行自动采集，保存高质量音质的接待录音可随时调取回听</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">服务质量评定</div>
-                                <div class="select-text">听鉴云独有的智能语音识别能力及算法模型可对接待服务质量进行精准分析，输出接待质量得分及各业务项开口率情况</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">客户洞察分析</div>
-                                <div class="select-text">通过算法能力对客户偏好问题、客户分级、客户分类、进行智能评测，形成全维度、客观、真实的客户画像</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">风控合规管理</div>
-                                <div class="select-text">可对接待过程中出现的敏感内容进行监测及审核管理</div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-name">全维度BI管理后台</div>
-                                <div class="select-text">支持主机厂、经销商集团、区域、经销商多角色后台管理，分层多维度展示分析数据，提升管理效能</div>
-                            </div>
-                        </div>
-                        
+                    <div class="advantage-text">
+                        <p>系统同时支持私有化部署与云服务两种交付方式，用户可根据自身需求灵活获取方式</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="case">
-            <div class="title">
-                <div class="title-name">典型案例</div>
-                <div class="title-text">以用户价值为导向，共筑视频价值链</div>
+        <div class="product">
+            <div class="product-title">
+                产品功能
             </div>
-            <div class="swiper swiper1">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide swiper-no-swiping ">
-                        <img src="./img/index/1.png" alt="">
+            <div class="product-content">
+                <div class="product-left left1 bg1 active">
+                    <div>
+                        <div class="product-top">智能写稿</div>
+                        <div class="product-text">
+                            <p>具备一键成文、长文缩编、自动标题、要点提取等多项功能，有效提升文字工作效率。同时提供私有数据训练能力，助力形成自有文字风格</p>
+                        </div>
                     </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/2.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/3.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/4.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/5.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/6.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/7.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/8.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/9.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/10.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/11.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/12.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/13.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/14.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/15.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/16.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/17.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/18.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/19.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/20.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/21.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/22.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/23.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-no-swiping">
-                        <img src="./img/index/24.png" alt="">
-                    </div>
-                   
+                    <a href="./IntelligentWriting.html">
+                        <div class="product-btn">
+                            <p>查看详情</p>
+                        </div>
+                    </a>
+                    
                 </div>
-                
-            </div>
-            <div class="swiper swiper2">
-                <div class="swiper-wrapper">
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/25.png" alt="">
+                <div class="product-right left1 bg2">
+                    <div>
+                        <div class="product-top">智能成片</div>
+                        <div class="product-text">
+                            <p>基于多模态大模型能力，支持自动成片、长视频缩编等多种应用场景，具备二次编辑能力，可预设多种模版，有效提升视频生成效率</p>
                         </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/26.png" alt="">
+                    </div>
+                    <a href="./oneClick.html">
+                        <div class="product-btn">
+                            <p>查看详情</p>
                         </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/27.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/28.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/29.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/30.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/31.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/32.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/33.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/34.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/35.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/36.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/37.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/38.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/39.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/40.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/41.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/42.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/43.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/44.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/45.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/46.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/47.png" alt="">
-                        </div>
-                        <div class="swiper-slide swiper-no-swiping">
-                            <img src="./img/index/48.png" alt="">
-                        </div>
+                    </a>
+                    
                 </div>
-                <!-- 如果需要分页器 -->
-                <div class="swiper-pagination"></div>
-                
-                <!-- 如果需要导航按钮 -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                
-                <!-- 如果需要滚动条 -->
-                <div class="swiper-scrollbar"></div>
+            <!-- </div>
+            <div class="product-content bot"> -->
+                <div class="product-left bg3">
+                    <div>
+                        <div class="product-top">数字孪生</div>
+                        <div class="product-text">
+                            <p>便捷的数字人建模与应用工具，方便用户快速建立海量内容生产能力，有效应对运营成本压力</p>
+                        </div>
+                    </div>
+                    <a href="./numeral.html">
+                        <div class="product-btn">
+                            <p>查看详情</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-right bg4">
+                    <div>
+                        <div class="product-top">H5创意工坊</div>
+                        <div class="product-text">
+                            <p>一站式H5生成工具，丰富的模版库，支持音视图文等多媒体形态</p>
+                        </div>
+                    </div>
+                    <a href="./workshop.html">
+                        <div class="product-btn">
+                            <p>查看详情</p>
+                        </div>
+                    </a>
+                </div>
+            <!-- </div>
+            <div class="product-content bot"> -->
+                <div class="product-left bg5">
+                    <div>
+                        <div class="product-top">智能工具集</div>
+                        <div class="product-text">
+                            <p>提供智能修图、上变换转码、智能审核、视频编辑等丰富的工具，方便用户一站式解决所有问题</p>
+                        </div>
+                    </div>
+                    <div class="product-btn default">
+                        <p>查看详情</p>
+                    </div>
+                </div>
+                <div class="product-right bg6">
+                    <div>
+                        <div class="product-top">虚拟兵团</div>
+                        <div class="product-text">
+                            <p>方便媒体机构规模化运营，有效降低运营成本</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-btn default">
+                        <p>查看详情</p>
+                    </div>
+                </div>
             </div>
         </div>
-        
+        <div class="basics">
+            <div class="basics-title">基础技术</div>
+            <div class="basics-content">
+                <div class="basics-top">
+                    <div class="basics-name">华为盘古</div>
+                    <div class="basics-text">
+                        <p>
+                            与华为盘古正式签署生态合作协议，在智能成稿等文字生成类应用中，底层对接华为盘古NLP大模型，确保生成内容具备正确的意识形态以及良好的三观表现
+                        </p>
+                    </div>
+                    <div class="basics-img">
+                        <img src="./img/IntelligentWork/huawei.png" alt="">
+                    </div>
+                </div>
+                <div class="basics-bottom">
+                    <div class="basics-name">清华大学</div>
+                    <div class="basics-text">
+                        <p>
+                            基于清华大学大模型技术，通过针对性训练．实现符合媒体行业需求的生成能力，并提供私有化部署方案及持续训练接口，确保客户私有数据的安全以及私有大模型底座的持续成长
+                        </p>
+                    </div>
+                    <div class="basics-img img2">
+                        <img src="./img/IntelligentWork/qinghua.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="contact">
             <div class="contact-title">联系我们</div>
             <div>北京总部</div>
@@ -710,57 +501,13 @@
         </div>
     </div>
 </body>
-<script src="../swiper/swiper-bundle.min.js"></script>
+
 <script src="./jquery.js"></script>
-<script>    
-    $(".select-view .select-list").on("click",function(event) {
+<script>
+    $(".product-content>div").on("click",function(event) {
         event.stopPropagation()
         // addClass 给元素添加指定的样式
         $(this).addClass("active").siblings().removeClass("active");
     });
-    var Index = 0
-    $(".select-div").on("click",function(event) {
-        event.stopPropagation()
-        let index = $(this).index();
-        if(index == Index){
-            Index = 7
-            $(".select-div").eq(index).children(".select-title").children(".updown").removeClass("updownActive")
-            $(".select-div").eq(index).children(".select-content").css({
-                display:"none"
-            })
-        }else{
-            Index = index
-            $(".select-div .select-content").css({
-                display:"none"
-            })
-            $(".updown").removeClass("updownActive")
-            $(".select-div").eq(index).children(".select-content").css({
-                display:"block"
-            })
-            $(".select-div").eq(index).children(".select-title").children(".updown").addClass("updownActive")
-           
-        }
-       
-    });
-    var mySwiper = new Swiper ('.swiper1', {
-    //   direction: 'vertical', // 垂直切换选项
-        loop: true, // 循环模式选项
-        autoplay: true,
-        slidesPerView: 3,
-        grid: {
-            fill: 'column',
-            rows: 1,
-        },
-    })  
-    var mySwiper1 = new Swiper ('.swiper2', {
-    //   direction: 'vertical', // 垂直切换选项
-        loop: true, // 循环模式选项
-        autoplay: true,
-        slidesPerView: 3,
-        grid: {
-            fill: 'column',
-            rows: 1,
-        },
-    })              
-    </script>
+</script>
 </html>

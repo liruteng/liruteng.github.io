@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="371px" height="248px" viewBox="0 0 371 248" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="13.9127488%" x2="1.52453133%" y2="92.6040054%" id="linearGradient-1">
+            <stop stop-color="#AA80FD" stop-opacity="0.15" offset="0%"></stop>
+            <stop stop-color="#A87CFD" stop-opacity="0.05" offset="100%"></stop>
+        </linearGradient>
+        <path d="M20.9335347,72.9411765 L290.661631,72.9411765 C292.318486,72.9411765 293.661631,74.2843222 293.661631,75.9411765 L293.661631,231.533937 C293.661631,233.190791 292.318486,234.533937 290.661631,234.533937 L20.9335347,234.533937 C19.2766805,234.533937 17.9335347,233.190791 17.9335347,231.533937 L17.9335347,75.9411765 C17.9335347,74.2843222 19.2766805,72.9411765 20.9335347,72.9411765 Z" id="path-2"></path>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="275.728097" height="161.59276" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <linearGradient x1="104.378711%" y1="50%" x2="0%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#D2EFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#AA80FD" stop-opacity="0.3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="官网" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PAAS-2-Copy" transform="translate(-426.000000, -3029.000000)">
+            <g id="Group-35" transform="translate(426.000000, 3029.000000)">
+                <g id="Group-6">
+                    <g id="Group-5">
+                        <path d="M32.2628399,29.1764706 L338.73716,29.1764706 C339.84173,29.1764706 340.73716,30.0719011 340.73716,31.1764706 L340.73716,216.823529 C340.73716,217.928099 339.84173,218.823529 338.73716,218.823529 L309.948624,218.823529 L309.956487,60.5957329 C309.956538,59.4911634 309.061148,58.595692 307.956579,58.5956415 C307.956369,58.5956415 307.95616,58.5956415 307.95595,58.5956415 L30.2628399,58.6708097 L30.2628399,31.1764706 C30.2628399,30.0719011 31.1582704,29.1764706 32.2628399,29.1764706 Z" id="Rectangle-36-Copy" fill-opacity="0.2" fill="#AA80FD" opacity="0.4"></path>
+                        <path d="M62.5256798,0 L369,0 C370.104569,-2.02906125e-16 371,0.8954305 371,2 L371,187.647059 C371,188.751628 370.104569,189.647059 369,189.647059 L340.211464,189.647059 L340.219327,31.4192623 C340.219378,30.3146928 339.323988,29.4192214 338.219419,29.4191709 C338.219209,29.4191709 338.219,29.4191709 338.21879,29.419171 L60.5256798,29.4943391 L60.5256798,2 C60.5256798,0.8954305 61.4211103,2.02906125e-16 62.5256798,0 Z" id="Rectangle-36-Copy-2" fill-opacity="0.12" fill="#AA80FD" opacity="0.218727022"></path>
+                        <rect id="Rectangle-36" stroke-opacity="0.843891531" stroke="#AA80FD" fill="url(#linearGradient-1)" opacity="0.802159926" x="0.5" y="58.8529412" width="309.47432" height="188.647059" rx="2"></rect>
+                        <use id="Rectangle-36" stroke="#A87DFD" mask="url(#mask-3)" stroke-width="3" opacity="0.347311581" stroke-dasharray="4" xlink:href="#path-2"></use>
+                        <rect id="Rectangle-37" fill="url(#linearGradient-4)" x="163.643505" y="93.1402715" width="61.6465257" height="11.2217195" rx="0.5"></rect>
+                        <rect id="Rectangle-37-Copy" fill="url(#linearGradient-4)" x="163.643505" y="114.461538" width="119.930514" height="11.2217195" rx="0.5"></rect>
+                        <rect id="Rectangle-37-Copy-2" fill="url(#linearGradient-4)" x="163.643505" y="133.538462" width="119.930514" height="11.2217195" rx="0.5"></rect>
+                        <rect id="Rectangle-37-Copy-5" fill="url(#linearGradient-4)" x="196.148036" y="152.615385" width="40.3504532" height="5.61085973" rx="0.5"></rect>
+                        <rect id="Rectangle-37-Copy-3" fill="url(#linearGradient-4)" x="163.643505" y="166.081448" width="119.930514" height="11.2217195" rx="0.5"></rect>
+                        <rect id="Rectangle-37-Copy-4" fill="url(#linearGradient-4)" x="163.643505" y="184.036199" width="119.930514" height="32.5429864" rx="0.5"></rect>
+                    </g>
+                    <g id="门户" transform="translate(45.000000, 105.000000)" fill-rule="nonzero">
+                        <polygon id="Shape" stroke-opacity="0.3" stroke="#AA80FD" stroke-width="3" points="84.3965246 0.069671316 84.3965246 97.9029129 0.615212742 97.9029129 0.615212742 0.069671316"></polygon>
+                        <path d="M57.9104604,15.8901291 L70.4605263,15.8901291 L70.4605263,28.354638 L57.9104604,28.354638 L57.9104604,15.8901291 Z M57.9104604,43.8873337 L70.4605263,43.8873337 L70.4605263,56.3518426 L57.9104604,56.3518426 L57.9104604,43.8873337 Z M13.4210526,73.1446865 L70.4605263,73.1446865 L70.4605263,85.6091954 L13.4210526,85.6091954 L13.4210526,73.1446865 Z M13.4210526,14.6436782 L45.8785166,14.6436782 L45.8785166,56.9682194 L13.4210526,56.9682194 L13.4210526,14.6436782 Z" id="Shape" fill-opacity="0.3" fill="#AA80FD"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

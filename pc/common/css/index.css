@@ -1,0 +1,235 @@
+.sc_ser_icon{
+	margin: 0 auto;
+	height: 45px;
+	width: 45px;
+}
+.focus-slide .slide+.slide{
+	display: none;
+}
+[v-cloak] {
+	display: none;
+}
+.news-img img{
+	display: block;
+	width: 388px;
+	height: 240px;
+}
+.sc_app img.lazy {
+    width: 736px;
+    height: 490px;
+    background: url(../../common/images/loading.gif) 50% no-repeat;
+}
+
+.page-index-wrapper .top-banner {
+	background: url(./../images/index/banner.jpg) no-repeat center / cover;
+}
+.page-index-wrapper .top-banner .banner-cont {
+	margin-top: 0;
+}
+.page-index-wrapper .top-banner .banner-title {
+    font-size: 2.4vw;
+}
+.page-index-wrapper .top-banner .banner-intro {
+    margin-top: 2vw;
+    letter-spacing: 1px;
+}
+.page-index-wrapper .common-block {
+	padding-top: 4vw;
+}
+.page-index-wrapper .common-block .title-wrapper {
+	text-align: center;
+	margin-bottom: 3vw;
+}
+.page-index-wrapper .common-block .title-wrapper .title {
+	font-size: 1.8vw;
+	color: #101010;
+	font-weight: 700;
+}
+.page-index-wrapper .common-block .title-wrapper .sub-title {
+    margin-top: 1.5vw;
+    font-size: 0;
+    line-height: 1;
+}
+.page-index-wrapper .common-block .title-wrapper .sub-title span {
+    display: inline-block;
+    margin: 0.4vw 0;
+    padding: 0 14px;
+    font-size: 1.2vw;
+    vertical-align: top;
+    white-space: nowrap;
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: relative;
+	color: #8c8c8c;
+}
+.page-index-wrapper .common-block .title-wrapper .sub-title span::after {
+    content: "";
+    width: 2px;
+    height: 1.2vw;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: #8c8c8c;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.6vw;
+    right: 0;
+}
+.page-index-wrapper .common-block .title-wrapper .sub-title span:last-child::after {
+    display: none;
+}
+.page-index-wrapper .block-1 .cont-nav {
+	display: flex;
+	margin: 0 -1vw;
+}
+.page-index-wrapper .block-1 .cont-nav .nav-item {
+	width: 20%;
+	margin: 0 1vw;
+	text-align: center;
+	box-shadow: rgba(180, 190, 195, 0.5) 0px 0px 7px;
+	box-sizing: border-box;
+	cursor: pointer;
+	border-bottom-width: 0;
+	position: relative;
+	transition: all 0.3s ease;
+}
+.page-index-wrapper .block-1 .cont-nav .nav-item  a {
+	padding: 1.5vw 0;
+	display: block;
+}
+.page-index-wrapper .block-1 .cont-nav .nav-item::after {
+	content: '';
+	width: 0;
+	height: 4px;
+	background-color: #eb3223;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: all 0.3s ease;
+}
+.page-index-wrapper .block-1 .cont-nav .nav-item:hover {
+	transform: translateY(-5px);
+	box-shadow: rgba(180, 190, 195, 0.7) 2px 2px 7px;
+}
+.page-index-wrapper .block-1 .cont-nav .nav-item:hover::after {
+	width: 100%;
+}
+.page-index-wrapper .block-1 .cont-nav .nav-item.active {
+	box-shadow: rgba(180, 190, 195, 0.7) 2px 2px 7px;
+}
+.page-index-wrapper .block-1 .cont-nav .nav-item.active::after {
+	width: 100%;
+}
+.page-index-wrapper .block-1 .cont-nav .nav-item .icon {
+	width: 2.6vw;
+	height: 2.6vw;
+	margin: 0 auto;
+
+}
+.page-index-wrapper .block-1 .cont-nav .nav-item:nth-child(1) .icon {
+	background: url(./../images/index/block1-icon.png) no-repeat 0 0 / 13vw;
+}
+.page-index-wrapper .block-1 .cont-nav .nav-item:nth-child(2) .icon {
+	background: url(./../images/index/block1-icon.png) no-repeat -2.6vw 0 / 13vw;
+}
+.page-index-wrapper .block-1 .cont-nav .nav-item:nth-child(3) .icon {
+	background: url(./../images/index/block1-icon.png) no-repeat -5.2vw 0 / 13vw;
+}
+.page-index-wrapper .block-1 .cont-nav .nav-item:nth-child(4) .icon {
+	background: url(./../images/index/block1-icon.png) no-repeat -7.8vw 0 / 13vw;
+}
+.page-index-wrapper .block-1 .cont-nav .nav-item:nth-child(5) .icon {
+	background: url(./../images/index/block1-icon.png) no-repeat -10.6vw 0 / 13vw;
+}
+.page-index-wrapper .block-1 .cont-nav .nav-item .text {
+	margin-top: 1.3vw;
+	font-size: 0.9vw;
+	color: #666;
+}
+.page-index-wrapper .block-1 .cont-nav .nav-item .text:hover {
+	color: #eb3223;
+}
+.page-index-wrapper .block-1 .cont-details {
+	margin-top: 0.5vw;
+	width: 100%;
+	padding: 1vw 0;
+	background-color: #f5f5f5;
+}
+.page-index-wrapper .block-1 .cont-details .detail-item {
+	flex-wrap: wrap;
+	display: none;
+}
+.page-index-wrapper .block-1 .cont-details .detail-item.show {
+	display: flex;
+}
+.page-index-wrapper .block-1 .cont-details .detail-item .detail {
+	display: block;
+	width: 33.333%;
+	padding: 1.5vw 1vw;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+@media screen and (max-width:768px) {
+	.page-index-wrapper .block-1 .cont-details .detail-item .detail {
+		width: 50%;
+	}
+}
+.page-index-wrapper .block-1 .cont-details .detail-item .detail:hover {
+	transform: translateY(-5px);
+	background-color: #fff;
+	box-shadow: rgba(180, 190, 195, 0.7) 2px 2px 5px;
+}
+.page-index-wrapper .block-1 .cont-details .detail-item .detail .title {
+	color: #333;
+	font-size: 1vw;
+}
+.page-index-wrapper .block-1 .cont-details .detail-item .detail .intro {
+	line-height: 1.5;
+	margin-top: 1vw;
+	color: #999;
+	font-size: 0.75vw;
+}
+.page-index-wrapper .block-1 .cont-details .detail-item .detail:hover .title {
+	color: #eb3223;
+}
+.page-index-wrapper .block-2 {
+	padding-bottom: 4vw;
+}
+.page-index-wrapper .block-2 .cont {
+	position: relative;
+}
+.page-index-wrapper .block-2 .swiper-slide {
+	font-size: 0;
+}
+.page-index-wrapper .block-2 .swiper-slide .img {
+	padding: 0.8vw;
+	/* margin-bottom: 15px; */
+}
+.page-index-wrapper .block-2 .swiper-slide .img:nth-child(4) {
+	margin-bottom: 0;
+}
+.page-index-wrapper .block-2 .swiper-slide img {
+	width: 100%;
+	box-shadow: rgba(0,0,0,0.1) 0px 2px 5px;
+}
+.page-index-wrapper .block-2 .swiper-btn {
+	width: 2.8vw;
+	height: 3.4vw;
+	cursor: pointer;
+	transition: all 0.2s ease-in;
+	position: absolute;
+	top: 50%;
+	margin-top: -1.7vw;
+	z-index: 9;
+}
+.page-index-wrapper .block-2 .swiper-button-next_hook {
+	right: -4vw;
+	background: rgba(0,0,0,0.08) url(./../images/index/swiper-right.png) no-repeat center / 1.6vw;
+}
+.page-index-wrapper .block-2 .swiper-button-prev_hook {
+	left: -4vw;
+	background: rgba(0,0,0,0.08) url(./../images/index/swiper-left.png) no-repeat center / 1.6vw;
+}
+.page-index-wrapper .block-2 .swiper-btn:hover {
+	background-color: rgba(0,0,0,0.4);
+}

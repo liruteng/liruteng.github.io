@@ -1,0 +1,209 @@
+* {
+	margin: 0;
+	padding:0;
+	font-family: "Microsoft YaHei", "PingFangSC-Light","Lantinghei SC", "Helvetica Neue", "Luxi Sans", "DejaVu Sans",Tahoma, "Hiragino Sans GB", STHeiti, simsun,sans-serif;
+}
+html {
+	overflow-x: hidden;
+}
+html,body,h1,h2,h3,h4,h5,h6,div,ul,ol,li,dl,dt,dd,iframe,textarea,input,button,p,strong,b,a,span,del,pre,table,tr,th,td{
+	margin:0;
+	padding:0; 
+}
+h1,h2,h3,h4,h5,h6,em,del {
+	font-style:normal; 
+	font-weight:normal;
+}
+ul,li {
+	list-style:none;
+}
+a {
+	text-decoration:none;
+}
+img {
+	display: block;
+	border:none;
+}
+.hide {
+	display:none;
+}
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+.tl{
+	text-align: left;
+}
+.tc{
+	text-align: center;
+}
+.tr{
+	text-align: right;
+}
+.fw{
+	font-weight: 400;
+}
+.fwb{
+	font-weight: bold;
+}
+.clearfloat:after {
+	display:block;
+	height:0;
+	clear:both;
+	content:"";
+	visibility:hidden;
+}
+.clearfloat {
+	zoom:1
+}
+
+a{
+	color: inherit;
+}
+i {
+	display: inline-block;
+}
+.verticalcenter{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+*{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/*解决火狐浏览器中文字3行不显示...的问题
+这种解决方式在火狐浏览器中超出3行后不显示...
+需要给定宽度  和font-size值  默认是14px
+*/
+.change_line{
+	font-size: 14px;
+	/*显示3行...*/
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	/*强制换行*/
+	word-break: break-all;       /* 只对英文起作用，以字母作为换行依据。 */
+	word-wrap: break-word;      /* 只对英文起作用，以单词作为换行依据。*/
+	white-space: pre-wrap;     /* 只对中文起作用，强制换行。*/
+	line-height: 1.5em;
+	max-height: 4.5em;/*根据你的行高来决定*/
+}
+/* 强制换行 */
+.compulsory_transfer{
+	word-break: break-all;       /* 只对英文起作用，以字母作为换行依据。 */
+	word-wrap: break-word;      /* 只对英文起作用，以单词作为换行依据。*/
+	white-space: pre-wrap;     /* 只对中文起作用，强制换行。*/
+}
+/*单行显示..*/
+.single_line_change{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+.page-wrapper {
+	min-height: 100%;
+}
+.page-content {
+	/* margin-top: 40px; */
+}
+/* 公共按鈕 */
+.common-btn {
+	padding: 0.5vw 1vw;
+	border: 1px solid #CA1111;
+	position: relative;
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+	overflow: hidden;
+	cursor: pointer;
+	font-size: 0.8vw;
+	display: flex;
+	align-items: center;
+}
+.common-btn span {
+	line-height: 1;
+	color: #CA1111;
+	position: relative;
+	z-index: 5;
+}
+.common-btn::before {
+	content: '';
+	position: absolute;
+    left: 0;
+    right: 0;
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #CA1111;
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    z-index: 0;
+    opacity: 0;
+}
+.common-btn:hover span {
+	color: #fff;
+
+}
+.common-btn:hover::before {
+	-webkit-transform: scaleX(200);
+	transform: scaleX(200);
+    opacity: 1;
+}
+.common-btn.disabled {
+	border: 1px solid rgba(201, 201, 201, 0.7);
+}
+.common-btn.disabled span {
+	color: rgba(201, 201, 201, 1);
+}
+.common-btn.disabled:hover span{
+	color: rgba(201, 201, 201, 1);
+}
+.common-btn.disabled:hover::before {
+	display: none;
+}
+/* 公共內容 */
+.content-w {
+	width: 80vw;
+	margin: 0  auto;
+}
+@media screen and (max-width:1440px) {
+	.content-w {
+		width: 90vw;
+	}
+}
+/* 公共banner */
+.top-banner {
+    width: 100%;
+    height: 18.7vw;
+    position: relative;
+}
+.top-banner .img {
+    width: 100%;
+}
+.top-banner .banner-cont {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    line-height: 1;
+    margin-top: -1.825vw;
+}
+.top-banner .banner-title {
+    font-size: 3.2vw;
+    letter-spacing: 2px;
+}
+.top-banner .banner-intro {
+    margin-top: 1.2vw;
+    font-size: 1.2vw;
+    line-height: 1.6;
+}

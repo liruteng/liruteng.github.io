@@ -1,0 +1,109 @@
+.sc_eagle_tab{
+    margin-bottom: 118px;
+}
+.sc_eagle_li ul li img{
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+    width: 40px;
+    height: 40px;
+}
+.sc_eagle_li ul li{
+    text-align: center;
+    cursor: pointer;
+}
+.sc_eagle_li ul li.sc_eagle_li_active .sc_eagle_li_main span{
+    display: inline-block;
+    border-bottom: 3px solid #E71A22;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 18px;
+}
+.sc_scene_cont{
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sc_scene_cont_main .scene_img img{
+    margin: auto;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 532px;
+}
+
+.sc_scene_cont .sc_scene_cont_main{
+
+}
+.sc_scene_cont .sc_scene_cont_main_active{
+    display: block;
+}
+.sc_scene_cont_title{
+    width: calc(100% - 26px);
+    margin: auto;
+    border-top: 1px solid #F2F2F2;
+    padding-bottom: 47px;
+}
+.sc_scene_cont_title p:first-child{
+    margin-top: 39px;
+    margin-bottom: 19px;
+}
+.sc_scene_cont_title p{
+    font-size: 14px;
+    color: #282828;
+}
+.sc_scene_cont_title p span:first-child{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #E71A22;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.service-scene .sw-img{
+    width: 100%;
+    background-color: #ffffff;
+}
+.service-scene .sw-img img{
+    width: calc(100% - 44px);
+    display: block;
+    margin: auto;
+}
+.mc_service_con .service-fun-tab .fun-ico-1{
+    background-image: url("../img/eagle/mc_task_information.svg");
+}
+.mc_service_con .service-fun-tab .fun-ico-2{
+    background-image: url("../img/eagle/mc_Voice.svg");
+}
+.mc_service_con .service-fun-tab .fun-ico-3{
+    background-image: url("../img/eagle/mc_transfer_field.svg");
+}
+.mc_service_con .service-fun-tab .fun-ico-4{
+     background-image: url("../img/eagle/mc_acoustic_wave.svg");
+}
+.mc_service_con .service-fun-tab .fun-ico-5{
+    background-image: url("../img/eagle/mc_application_pic.svg");
+}
+.mc_service_con .service-fun-tab .fun-ico-6{
+    background-image: url("../img/eagle/mc_article_search.svg");
+}
+.mc_service_con .service-advant-ul .advant-ico-1{
+    background-image: url(../img/eagle/mc_intelligent_extraction.svg);
+}
+.mc_service_con .service-advant-ul .advant-ico-2{
+    background-image: url(../img/eagle/mc_automatic_indexing.svg);
+}
+.mc_service_con .service-advant-ul .advant-ico-3{
+    background-image: url(../img/eagle/mc_second_level_search.svg);
+}
+.mc_service_con .service-advant-ul .advant-ico-4{
+    background-image: url(../img/eagle/mc_frame_level_positioning.svg);
+}
+.mc_service_con .service-advant-ul .advant-ico{
+    background-size: 100% 100%;
+}
+.sw-service-banner-live{
+    background-image: url(../img/eagle/mc_eagle_bg.jpg);
+}

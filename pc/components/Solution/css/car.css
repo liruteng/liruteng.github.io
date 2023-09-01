@@ -1,0 +1,35 @@
+.solution-banner-meet{
+	background-image: url(../img/car/carBg.jpg);
+}
+#solution-con-1{
+	height: 400px;
+	background: url(../img/solution/block.png)no-repeat;
+}
+#solution-con-2{
+	background-color: #f3f5ff;
+}
+.sc_serviceFeatures .service-fun-tab:nth-child(1) i{
+	background: url(../img/car/iconc1.svg)no-repeat;
+	background-size: 100% 100%;
+}
+.sc_serviceFeatures .service-fun-tab:nth-child(2) i{
+	background: url(../img/car/iconc2.svg)no-repeat;
+	background-size: 100% 100%;
+}
+
+.sc_serviceFeatures .service-fun-tab:nth-child(3) i{
+	background: url(../img/car/iconc3.svg)no-repeat;
+	background-size: 100% 100%;
+}
+
+.sc_serviceFeatures .service-fun-tab:nth-child(4) i{
+	background: url(../img/car/iconc4.svg)no-repeat;
+	background-size: 100% 100%;
+}
+
+.sc_serviceFeatures .service-fun-tab:nth-child(5) i{
+	background: url(../img/car/iconc5.svg)no-repeat;
+	background-size: 100% 100%;
+}
+
+
