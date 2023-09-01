@@ -15,13 +15,18 @@
     box-sizing: border-box;
     padding: 1.5vw 2vw;
 	transition: all 0.2s ease-out;
+	background: #F6F8FB;
 }
 .page-listenToJianyun-wrapper .content-wrapper .block-1 .item:nth-child(3n) {
     border-right: none;
 }
 .page-listenToJianyun-wrapper .content-wrapper .block-1 .block-item .item-t{
 	display: flex;
-	align-items: center;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 .block-item .item-t p{
+	flex: 1;
+	line-height: 32px;
+	min-height: 32px;
 }
 .page-listenToJianyun-wrapper .content-wrapper .block-1 .block-item .item-c{
 	font-family: PingFang SC;
@@ -37,7 +42,6 @@
 }
 .page-listenToJianyun-wrapper .content-wrapper .block-1 .item{
 	width: 23%;
-	background: #F6F8FB;
 }
 .page-listenToJianyun-wrapper .content-wrapper .block-1 .item-wrapper{
 	justify-content: space-between;
