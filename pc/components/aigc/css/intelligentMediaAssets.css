@@ -19,6 +19,7 @@
     transition: all .3s ease-out;
 	background: #F9FAFB;
 	margin-bottom: 1.5vw;
+	overflow: hidden;
 }
 .page-intelligentMediaAssets-wrapper .content-wrapper .block-1 .item .block-item:nth-child(9) , .page-intelligentMediaAssets-wrapper .content-wrapper .block-1 .item .block-item:nth-child(10) {
 	width: 49%;
@@ -285,12 +286,12 @@
 .page-intelligentMediaAssets-wrapper .content-wrapper .block-4 .block-cont-bg .item-wrapper .block-item {
 	width: 23%;
 	background-color: rgba(255, 255, 255, 0.7);
-	border-radius: 8px 8px 0 0;
 	padding: 1.3vw 2vw;
 	box-sizing: border-box;
 	height: 12vw;
 	cursor: pointer;
 	transition: all .3s ease-out;
+	overflow: hidden;
 }
 .page-intelligentMediaAssets-wrapper .content-wrapper .block-4 .block-cont-bg .item-wrapper .block-item:hover {
 	transform: translateY(-5px);
