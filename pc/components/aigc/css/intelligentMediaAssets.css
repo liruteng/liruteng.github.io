@@ -32,6 +32,10 @@
 	background: url("./../images/intelligentMediaAssets/item-top-long.png") no-repeat;
 	background-size: 100% 100%;
 }
+.page-intelligentMediaAssets-wrapper .content-wrapper .block-1 .item .block-item:nth-child(9):hover .item-top , .page-intelligentMediaAssets-wrapper .content-wrapper .block-1 .item .block-item:nth-child(10):hover .item-top {
+	background: url("./../images/intelligentMediaAssets/item-top-long-1.png") no-repeat;
+	background-size: 100% 100%;
+}
 .page-intelligentMediaAssets-wrapper .content-wrapper .block-1 .item .item-top {
     display: flex;
     align-items: center;
