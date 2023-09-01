@@ -1,9 +1,0 @@
-.commonList .news-item-trends .txt p:after {
-    content: "...";
-    font-weight: bold;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 0 5px 1px 45px;
-    background: url(../img/ellipsis_bg.png) repeat-y;
-}
