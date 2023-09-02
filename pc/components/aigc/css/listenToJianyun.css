@@ -38,7 +38,7 @@
     display: inline-block;
 	width: 34px;
 	height: 34px;
-	margin-right: 23px;
+	margin-right: 1vw;
 }
 .page-listenToJianyun-wrapper .content-wrapper .block-1 .item{
 	width: 23%;
@@ -75,7 +75,7 @@
 }
 .page-listenToJianyun-wrapper .content-wrapper .block-2 {
     margin-top: 4vw;
-    padding: 4vw 0 2vw;
+    padding: 2.5vw 0 3.5vw;
 	background: rgba(72, 127, 236, 0.12);
 }
 .page-listenToJianyun-wrapper .content-wrapper .block-2 .item-wrapper{
