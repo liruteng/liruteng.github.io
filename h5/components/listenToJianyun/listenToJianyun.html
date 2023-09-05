@@ -79,7 +79,7 @@
 			<div class="serviceContent">
 				<p class="title">服务内容</p>
 				<div class="item-list">
-					<div class="item">
+					<div class="item active">
 						<p>真实</p>
 						<p>呈现接待场景</p>
 						<i></i>
@@ -108,7 +108,7 @@
 			<div class="applicationScenario">
 				<p class="title">应用场景</p>
 				<div class="item-list">
-					<div class="item">
+					<div class="item active">
 						<p>汽车行业</p>
 					</div>
 					<div class="item">
@@ -144,12 +144,30 @@
 	<script src="https://www.yunshicloud.com/common/js/deviceType.js"></script>
 	<script>
 		let functionList = document.querySelectorAll('.function .item');
+		let serviceContentList = document.querySelectorAll('.serviceContent .item');
+		let applicationScenarioList = document.querySelectorAll('.applicationScenario .item');
 		for(let i = 0;i<functionList.length;i++){
 			functionList[i].ontouchstart = function() {
 				functionList.forEach(item => {
 					item.classList.remove('active');
 				})
 				functionList[i].classList.toggle('active')
+			}
+		}
+		for(let i = 0;i<serviceContentList.length;i++){
+			serviceContentList[i].ontouchstart = function() {
+				serviceContentList.forEach(item => {
+					item.classList.remove('active');
+				})
+				serviceContentList[i].classList.toggle('active')
+			}
+		}
+		for(let i = 0;i<applicationScenarioList.length;i++){
+			applicationScenarioList[i].ontouchstart = function() {
+				applicationScenarioList.forEach(item => {
+					item.classList.remove('active');
+				})
+				applicationScenarioList[i].classList.toggle('active')
 			}
 		}
 	</script>

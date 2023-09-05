@@ -13,6 +13,9 @@ ul,ol,li {
   font-family: PingFang Light;
   src: url('../../font/PingFang Light.ttf');
 }
+.listenToJianyun{
+	background: #f7f7f7;
+}
 .header{
 	width: 100%;
 	height: 16.5vw;
@@ -86,9 +89,9 @@ ul,ol,li {
 	padding: 4.5vw 1.8vw;
 	padding-right: 0;
 	background: rgba(224, 235, 252, 0.72);
-	box-shadow: 0px 0px 1px 0px #8B9EA0;
 	border-radius: 5px;
 	margin-bottom: 2.9vw;
+	transition: all 0.5s ease-out;
 }
 .function .item:nth-child(3),.function .item:nth-child(4) {
 	width: 100%;
@@ -100,6 +103,9 @@ ul,ol,li {
 }
 .function .item.active .function-item-title {
 	color: #0045D9;
+}
+.function .item.active{
+	box-shadow: 0px 0px 1px 0px #8B9EA0;
 }
 .function .item .function-item-title{
 	font-size: 3.4vw;
@@ -172,6 +178,10 @@ ul,ol,li {
 	box-sizing: border-box;
 	text-align: right;
 	margin-bottom: 2.9vw;
+	transition: all 0.5s ease-out;
+}
+.serviceContent .item.active{
+	box-shadow: 0px 0px 5px 0px #8B9EA0;
 }
 .serviceContent .item:nth-child(2){
 	background: url('../images/bg(1).png') no-repeat;
@@ -247,6 +257,10 @@ ul,ol,li {
 	background-size: 100% 100%;
 	position: relative;
 	margin-bottom: 2.6vw;
+	transition: all 0.5s ease-out;
+}
+.applicationScenario .item.active{
+	box-shadow: 0px 0px 5px 0px #8B9EA0;
 }
 .applicationScenario .item:nth-child(2) {
 	background: url('../images/bg(6).png') no-repeat;
