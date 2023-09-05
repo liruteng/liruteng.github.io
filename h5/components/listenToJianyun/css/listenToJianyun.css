@@ -1,0 +1,301 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,ol,li {
+	list-style: none;
+}
+@font-face {
+  font-family: PingFang Medium;
+  src: url('../../font/PingFang Medium.ttf');
+}
+@font-face {
+  font-family: PingFang Light;
+  src: url('../../font/PingFang Light.ttf');
+}
+.header{
+	width: 100%;
+	height: 16.5vw;
+	background-color: #222;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 5.3vw;
+}
+.header-left{
+	width: 19.7vw;
+	height: 8vw;
+}
+.header-right{
+	width: 6.4vw;
+	height: 5.3vw;
+}
+.header-left img{
+	width: 19.7vw;
+	height: 8vw;
+}
+.header-right img{
+	width: 6.4vw;
+	height: 5.3vw;
+}
+.banner {
+	height: 56vw;
+	background: url('../images/banner.png') no-repeat;
+	background-size: 100% 100%;
+	padding: 8.2vw 5.6vw;
+	box-sizing: border-box;
+}
+.banner img {
+	width: 100%;
+	height: 56vw;
+}
+.banner p{
+	width: 52%;
+	font-size: 4.8vw;
+	font-family: PingFangSC-Medium;
+	font-weight: 500;
+	color: #000;
+}
+.banner ul {
+	display: flex;
+	margin-top: 5.8vw;
+}
+.banner ul li {
+	font-size: 3.7vw;
+	font-family: PingFangSC-Light;
+	font-weight: 300;
+	margin-right: 1.5vw;
+}
+.function {
+	box-sizing: border-box;
+	padding: 0 5.3vw;
+}
+.function .title {
+	font-size: 4.8vw;
+	font-family: PingFangSC-Medium;
+	font-weight: 500;
+	color: #101010;
+	text-align: center;
+	margin: 5.3vw 0;
+}
+.function .item{
+	width: 49%;
+	box-sizing: border-box;
+	padding: 4.5vw 1.8vw;
+	background: rgba(224, 235, 252, 0.72);
+	box-shadow: 0px 0px 1px 0px #8B9EA0;
+	border-radius: 5px;
+	margin-bottom: 2.9vw;
+}
+.function .item:nth-child(3),.function .item:nth-child(4) {
+	width: 100%;
+}
+.function .item-list{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.function .item.active .function-item-title {
+	color: #0045D9;
+}
+.function .item .function-item-title{
+	font-size: 3.4vw;
+	font-family: PingFangSC-Medium;
+	font-weight: 500;
+	color: #333333;
+	display: flex;
+	align-items: center;
+	padding-bottom: 3.2vw;
+	border-bottom: 1px solid rgba(51, 51, 51, .16);
+}
+.function .item .function-item-title i{
+	display: inline-block;
+	width: 4.5vw;
+	height: 4.5vw;
+	background: url('../images/1(5).png') no-repeat;
+	background-size: 100% 100%;
+	margin-right: 0.8vw;
+}
+.function .item:nth-child(2) .function-item-title i{
+	background: url('../images/2.png') no-repeat;
+	background-size: 100% 100%;
+}
+.function .item:nth-child(3) .function-item-title i{
+	background: url('../images/3.png') no-repeat;
+	background-size: 100% 100%;
+}
+.function .item:nth-child(4) .function-item-title i{
+	background: url('../images/4.png') no-repeat;
+	background-size: 100% 100%;
+}
+.function .item .function-item-c{
+	font-size: 2.6vw;
+	font-family: PingFang Light;
+	font-weight: 300;
+	color: #666666;
+	line-height: 4vw;
+	margin-top: 2.4vw;
+}
+
+.serviceContent {
+	box-sizing: border-box;
+	padding: 0 5.3vw;
+}
+.serviceContent .item-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.serviceContent .title {
+	font-size: 4.8vw;
+	font-family: PingFangSC-Medium;
+	font-weight: 500;
+	color: #101010;
+	text-align: center;
+	margin: 5.3vw 0;
+}
+.serviceContent .item{
+	background: url('../images/bg.png') no-repeat;
+	background-size: 100% 100%;
+	width: 49%;
+	height: 20.8vw;
+	font-size: 3.7vw;
+	color: #FFFFFF;
+	padding: 4vw 2.9vw;
+	box-sizing: border-box;
+	text-align: right;
+	margin-bottom: 2.9vw;
+}
+.serviceContent .item:nth-child(2){
+	background: url('../images/bg(1).png') no-repeat;
+	background-size: 100% 100%;
+}
+.serviceContent .item:nth-child(3){
+	background: url('../images/bg(2).png') no-repeat;
+	background-size: 100% 100%;
+}
+.serviceContent .item:nth-child(4){
+	background: url('../images/bg(3).png') no-repeat;
+	background-size: 100% 100%;
+}
+.serviceContent .item:nth-child(5){
+	background: url('../images/bg(4).png') no-repeat;
+	background-size: 100% 100%;
+}
+.serviceContent .item:last-child{
+	width: 100%;
+}
+.serviceContent .item:last-child p{
+	text-align: center;
+	line-height: 12vw;
+}
+.serviceContent .item p{
+	text-align: left;
+	font-family: PingFangSC-Medium;
+	font-weight: 500;
+}
+.serviceContent .item i {
+	display: inline-block;
+	width: 6.4vw;
+	height: 6.4vw;
+	background: url('../images/1.png') no-repeat;
+	background-size: 100% 100%;
+}
+.serviceContent .item:nth-child(2) i {
+	background: url('../images/1(1).png') no-repeat;
+	background-size: 100% 100%;
+}
+.serviceContent .item:nth-child(3) i {
+	background: url('../images/1(2).png') no-repeat;
+	background-size: 100% 100%;
+}
+.serviceContent .item:nth-child(4) i {
+	background: url('../images/1(3).png') no-repeat;
+	background-size: 100% 100%;
+}
+.serviceContent .item:nth-child(5) i {
+	background: url('../images/1(4).png') no-repeat;
+	background-size: 100% 100%;
+}
+
+.applicationScenario .item-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.applicationScenario .title {
+	font-size: 4.8vw;
+	font-family: PingFangSC-Medium;
+	font-weight: 500;
+	color: #101010;
+	text-align: center;
+	margin: 5.3vw 0;
+}
+.applicationScenario .item {
+	width: 49%;
+	height: 21.6vw;
+	background: url('../images/bg(5).png') no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	margin-bottom: 2.6vw;
+}
+.applicationScenario .item:nth-child(2) {
+	background: url('../images/bg(6).png') no-repeat;
+	background-size: 100% 100%;
+}
+.applicationScenario .item:nth-child(3) {
+	background: url('../images/bg(7).png') no-repeat;
+	background-size: 100% 100%;
+}
+.applicationScenario .item:nth-child(4) {
+	background: url('../images/bg(8).png') no-repeat;
+	background-size: 100% 100%;
+}
+.applicationScenario .item p{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 6.9vw;
+	line-height: 6.9vw;
+	font-size: 3.7vw;
+	font-family: PingFangSC-Medium;
+	font-weight: 500;
+	color: #333333;
+	background: #FFFFFF;
+	opacity: 0.64;
+	text-align: center;
+}
+.contact{
+	background: #222222;
+	font-size: 2.6vw;
+	font-family: PingFangSC-Light;
+	font-weight: 300;
+	color: #FFFFFF;
+	line-height: 4vw;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 4.5vw 0;
+}
+.contact>div.contact-title{
+	font-size: 3.2vw;
+	font-family: PingFang SC;
+	font-weight: 500;
+	color: #FFFFFF;
+	margin-bottom: 2.9vw;
+}
+.contact>div{
+	margin-bottom: 1vw;
+}
+.contact>div.line{
+	height: 1px;
+	background: #8A8A8A;
+	margin-top: 3.8vw;
+	margin-bottom: 2.6vw;
+}
+.contact>div.small{
+	font-size: 2.1vw;
+}
+.contact>div.bot-img{
+	font-size: 2.1vw;
+}

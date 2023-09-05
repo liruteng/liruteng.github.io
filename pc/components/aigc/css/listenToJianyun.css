@@ -15,13 +15,18 @@
     box-sizing: border-box;
     padding: 1.5vw 2vw;
 	transition: all 0.2s ease-out;
+	background: #F6F8FB;
 }
 .page-listenToJianyun-wrapper .content-wrapper .block-1 .item:nth-child(3n) {
     border-right: none;
 }
 .page-listenToJianyun-wrapper .content-wrapper .block-1 .block-item .item-t{
 	display: flex;
-	align-items: center;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 .block-item .item-t p{
+	flex: 1;
+	line-height: 32px;
+	min-height: 32px;
 }
 .page-listenToJianyun-wrapper .content-wrapper .block-1 .block-item .item-c{
 	font-family: PingFang SC;
@@ -33,11 +38,10 @@
     display: inline-block;
 	width: 34px;
 	height: 34px;
-	margin-right: 23px;
+	margin-right: 0.5vw;
 }
 .page-listenToJianyun-wrapper .content-wrapper .block-1 .item{
 	width: 23%;
-	background: #F6F8FB;
 }
 .page-listenToJianyun-wrapper .content-wrapper .block-1 .item-wrapper{
 	justify-content: space-between;
@@ -71,7 +75,7 @@
 }
 .page-listenToJianyun-wrapper .content-wrapper .block-2 {
     margin-top: 4vw;
-    padding: 4vw 0 2vw;
+    padding: 2.5vw 0 3.5vw;
 	background: rgba(72, 127, 236, 0.12);
 }
 .page-listenToJianyun-wrapper .content-wrapper .block-2 .item-wrapper{
