@@ -137,4 +137,15 @@
 			</div>
 		</div>
 	</body>
+	<script>
+		let functionList = document.querySelectorAll('.function .item');
+		for(let i = 0;i<functionList.length;i++){
+			functionList[i].ontouchstart = function() {
+				functionList.forEach(item => {
+					item.classList.remove('active');
+				})
+				functionList[i].classList.toggle('active')
+			}
+		}
+	</script>
 </html>
