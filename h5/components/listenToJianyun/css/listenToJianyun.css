@@ -155,7 +155,7 @@ ul,ol,li {
 	font-weight: 500;
 	color: #101010;
 	text-align: center;
-	margin: 5.3vw 0;
+	margin: 2.4vw 0 5.3vw 0;
 }
 .serviceContent .item{
 	background: url('../images/bg.png') no-repeat;
@@ -233,7 +233,7 @@ ul,ol,li {
 	font-weight: 500;
 	color: #101010;
 	text-align: center;
-	margin: 5.3vw 0;
+	margin: 2.4vw 0 5.3vw 0;
 }
 .applicationScenario .item {
 	width: 49%;
