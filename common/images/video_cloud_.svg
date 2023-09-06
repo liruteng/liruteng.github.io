@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>视频云</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="官网" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页-copy-2" transform="translate(-1381.000000, -831.000000)">
+            <g id="Group-5" transform="translate(372.000000, 799.000000)">
+                <g id="视频云" transform="translate(1010.000000, 32.000000)">
+                    <path d="M19.5,40 C30.2695526,40 39,31.2695526 39,20.5 C39,9.73044738 30.2695526,1 19.5,1 C8.73044738,1 2.27373675e-13,9.73044738 2.27373675e-13,20.5 C7.95807864e-14,24.6296596 1.32033791,28.5493601 3.96101373,32.2591015" id="Oval-7-Copy" stroke="#3C3C3C" stroke-width="2" transform="translate(19.500000, 20.500000) scale(-1, -1) translate(-19.500000, -20.500000) "></path>
+                    <circle id="Oval-7" fill="#3C3C3C" cx="20" cy="1" r="1"></circle>
+                    <circle id="Oval-7-Copy-3" fill="#3C3C3C" cx="26" cy="2" r="1"></circle>
+                    <path d="M35,10 C35.5522847,10 36,9.55228475 36,9 C36,8.44771525 35.5522847,8 35,8 C34.4477153,8 34,8.44771525 34,9 C34,9.55228475 34.4477153,10 35,10 Z" id="Oval-7-Copy-2" fill="#3C3C3C"></path>
+                    <circle id="Oval-7-Copy-4" fill="#3C3C3C" cx="32" cy="5" r="1"></circle>
+                    <path d="M26.4622344,19.6057361 L16.6124553,14.1398914 C15.8954345,13.7420814 15,14.2401524 15,15.0357724 L15,25.9642276 C15,26.7598476 15.8954345,27.2579186 16.6124553,26.8601086 L26.4622344,21.3942639 C27.1792552,20.9964539 27.1792552,20.0035461 26.4622344,19.6057361 Z" id="Shape" stroke="#E71A22" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
