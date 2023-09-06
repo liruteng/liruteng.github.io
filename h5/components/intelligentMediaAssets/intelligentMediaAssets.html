@@ -233,9 +233,11 @@
 		functionItemItem[preIndex].children[0].style.cssText = `background: url('images/topimg/${(preIndex+1)}.jpg') no-repeat;background-size: 100% 100%;`
 		for(let i = 0;i<functionItemItem.length;i++) {
 			functionItemItem[i].ontouchstart = function () {
+				functionItemItem[preIndex].style.cssText = 'box-shadow: none';
 				functionItemItem[preIndex].children[0].style.cssText = `background: url('images/topimg/${(preIndex+1)}-1.jpg') no-repeat;background-size: 100% 100%;`
 				functionItemItem[i].children[0].style.cssText = `background: url('images/topimg/${(i+1)}.jpg') no-repeat;background-size: 100% 100%;`
 				preIndex = i;
+				functionItemItem[i].style.cssText = 'box-shadow: 0px 1px 4px 0px rgba(169,175,178,0.72);';
 			}
 		}
 	</script>
