@@ -84,7 +84,6 @@ ul,ol,li {
 }
 .function .item .item-t {
 	height: 8.5vw;
-	background: url('../images/topimg/底图(4).png') no-repeat;
 	background-size: 100% 100%;
 	display: flex;
 	align-items: center;
@@ -93,7 +92,7 @@ ul,ol,li {
 	display: inline-block;
 	width: 4.5vw;
 	height: 4.5vw;
-	background: url('../images/topimg/1-2.png') no-repeat;
+	background: url('../images/topimg/1-2.jpg') no-repeat;
 	background-size: 100% 100%;
 	margin-right: 2.4vw;
 	margin-left: 2vw;
