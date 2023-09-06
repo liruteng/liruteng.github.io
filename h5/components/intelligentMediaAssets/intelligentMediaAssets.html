@@ -25,7 +25,7 @@
 			<div class="banner">
 				<p>智能数字资产管理系统</p>
 				<ul>
-					<li>基于人工智能技术，构建了全新高智能化数字资产统一管理平台。该平台还可通过机器学习等技术，实现自我学习和智能推荐，从而系统提升管理水平，智能化挖掘和再生其社会和商业价值。 </li>
+					<li>基于人工智能技术，构建了全新高智能化数字资产统一管理平台。该平台还可通过机器学习等技术，实现自我学习和智能推荐，从而系统提升管理水平，智能化挖掘和再生其社会和商业价值 </li>
 				</ul>
 			</div>
 			<div class="function">
@@ -230,14 +230,14 @@
 		
 		let functionItemItem = document.querySelectorAll('.function .item-list .item');
 		let preIndex = 0;
-		functionItemItem[preIndex].children[0].style.cssText = `background: url('images/topimg/${(preIndex+1)}.jpg') no-repeat;background-size: 100% 100%;`
+		functionItemItem[preIndex].children[0].style.cssText = `background: url('images/topimg/${(preIndex+1)}.jpg') no-repeat;background-size: 100% 100%;color: #0C4BD1;`
 		for(let i = 0;i<functionItemItem.length;i++) {
 			functionItemItem[i].ontouchstart = function () {
 				functionItemItem[preIndex].style.cssText = 'box-shadow: none';
 				functionItemItem[preIndex].children[0].style.cssText = `background: url('images/topimg/${(preIndex+1)}-1.jpg') no-repeat;background-size: 100% 100%;`
 				functionItemItem[i].children[0].style.cssText = `background: url('images/topimg/${(i+1)}.jpg') no-repeat;background-size: 100% 100%;`
 				preIndex = i;
-				functionItemItem[i].style.cssText = 'box-shadow: 0px 1px 4px 0px rgba(169,175,178,0.72);';
+				functionItemItem[i].style.cssText = 'box-shadow: 0px 1px 4px 0px rgba(169,175,178,0.72);color: #0C4BD1;';
 			}
 		}
 	</script>
