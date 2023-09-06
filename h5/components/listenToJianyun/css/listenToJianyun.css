@@ -137,7 +137,8 @@ ul,ol,li {
 	padding-right: 1.8vw;
 	box-sizing: border-box;
 	transform-origin: left top;
-	    transform: scale(.86,.86);
+	transform: scale(.86,.86);
+	width: 115%;
 }
 .function .item .line{
 	height: 0.2vw;
