@@ -153,6 +153,7 @@ ul,ol,li {
 	padding: 3vw;
 	margin-bottom: 2.9vw;
 	padding-bottom: 1.5vw;
+	transition: all 0.5s ease-out;
 }
 .productAdvantages .item-list .item.active {
 	box-shadow: 0px 1px 4px 0px rgba(169,175,178,0.72);
