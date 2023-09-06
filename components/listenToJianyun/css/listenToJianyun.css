@@ -1,0 +1,270 @@
+.page-listenToJianyun-wrapper .top-banner {
+    background: url(./../images/listenToJianyun/banner.png) no-repeat center / cover;
+}
+.page-listenToJianyun-wrapper .top-banner .banner-intro span {
+	margin-right: 10px;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 {
+    margin: 0;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 .item {
+    padding: 0;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 .block-item {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1.5vw 2vw;
+	transition: all 0.2s ease-out;
+	background: #F6F8FB;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 .item:nth-child(3n) {
+    border-right: none;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 .block-item .item-t{
+	display: flex;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 .block-item .item-t p{
+	flex: 1;
+	line-height: 32px;
+	min-height: 32px;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 .block-item .item-c{
+	font-family: PingFang SC;
+	font-weight: 300;
+	color: #333333;
+	margin-top: 1vw;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 .block-item .item-t i{
+    display: inline-block;
+	width: 34px;
+	height: 34px;
+	margin-right: 0.5vw;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 .item{
+	width: 23%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 .item-wrapper{
+	justify-content: space-between;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 .item .block-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 10px rgba(0,0,0,.1);
+	cursor: pointer;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 .item .block-item:hover .item-t {
+    color: #0C4BD1;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 .item:nth-child(1) i {
+    background: url(./../images/listenToJianyun/1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 .item:nth-child(2) i {
+    background: url(./../images/listenToJianyun/2.png) no-repeat;
+    background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 .item:nth-child(3) i {
+    background: url(./../images/listenToJianyun/3.png) no-repeat;
+    background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 .item:nth-child(4) i {
+    background: url(./../images/listenToJianyun/4.png) no-repeat;
+    background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-1 .block-item .item-c {
+    min-height: 4vw;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 {
+    margin-top: 4vw;
+    padding: 2.5vw 0 3.5vw;
+	background: rgba(72, 127, 236, 0.12);
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item-wrapper{
+	justify-content: space-between;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2  .item {
+    width: 18%;
+    text-align: center;
+	background: #fff;
+	text-align: right;
+	padding: 0;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2  .item .item-t,.page-listenToJianyun-wrapper .content-wrapper .block-2  .item .item-c{
+	font-family: PingFang SC;
+	font-weight: 500;
+	color: #333333;
+	text-align: left;
+	margin-top: 0;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item-icon {
+    display: inline-block;
+    width: 2.4vw;
+    height: 2.4vw;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item .block-item {
+	transition: all .3s ease-out;
+	padding: 2.5vw 2vw 1vw 2vw;
+	cursor: pointer;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item:nth-child(1) .block-item:hover {
+	background: #F6F8FB url(./../images/listenToJianyun/b1.png) no-repeat right center / cover;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item:nth-child(2) .block-item:hover {
+	background: #F6F8FB url(./../images/listenToJianyun/b2.png) no-repeat right center / cover;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item:nth-child(3) .block-item:hover {
+	background: #F6F8FB url(./../images/listenToJianyun/b3.png) no-repeat right center / cover;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item:nth-child(4) .block-item:hover {
+	background: #F6F8FB url(./../images/listenToJianyun/b4.png) no-repeat right center / cover;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item:nth-child(5) .block-item:hover {
+	background: #F6F8FB url(./../images/listenToJianyun/b5.png) no-repeat right center / cover;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item:nth-child(1) .block-item:hover .item-icon {
+	background: url(./../images/listenToJianyun/11-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item:nth-child(2) .block-item:hover .item-icon {
+	background: url(./../images/listenToJianyun/12-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item:nth-child(3) .block-item:hover .item-icon {
+	background: url(./../images/listenToJianyun/13-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item:nth-child(4) .block-item:hover .item-icon {
+	background: url(./../images/listenToJianyun/14-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item:nth-child(5) .block-item:hover .item-icon {
+	background: url(./../images/listenToJianyun/15-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item .block-item:hover .item-t {
+	color: #fff;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item .block-item:hover .item-c {
+	color: #fff;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item:nth-child(1) .item-icon {
+    background: url(./../images/listenToJianyun/11.png) no-repeat;
+	background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item:nth-child(2) .item-icon {
+    background: url(./../images/listenToJianyun/12.png) no-repeat;
+    background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item:nth-child(3) .item-icon {
+    background: url(./../images/listenToJianyun/13.png) no-repeat;
+    background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item:nth-child(4) .item-icon {
+    background: url(./../images/listenToJianyun/14.png) no-repeat;
+    background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-2 .item:nth-child(5) .item-icon {
+    background: url(./../images/listenToJianyun/15.png) no-repeat;
+    background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-3 {
+    margin-top: 4vw;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-3 .block-item {
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    overflow: hidden;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-3 .block-item .item-t {
+	height: 5vw;
+	line-height: 5vw;
+	text-align: center;
+	font-family: PingFang SC;
+	font-weight: 600;
+	color: #333333;
+	background: #F6F8FB;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-3 .item {
+	width: 24%;
+	padding: 0;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-3 .item-wrapper{
+	justify-content: space-between;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-3 .block-item .item-image {
+	height: 10vw;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-3 .item:nth-child(1) .item-image {
+	background: url(./../images/listenToJianyun/tu1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-3 .item:nth-child(2) .item-image {
+	background: url(./../images/listenToJianyun/tu2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-3 .item:nth-child(3) .item-image {
+	background: url(./../images/listenToJianyun/tu3.png) no-repeat;
+	background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-3 .item:nth-child(4) .item-image {
+	background: url(./../images/listenToJianyun/tu4.png) no-repeat;
+	background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-3 .item:nth-child(1) .block-item:hover .item-image {
+	background: url(./../images/listenToJianyun/tu1-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-3 .item:nth-child(2) .block-item:hover .item-image {
+	background: url(./../images/listenToJianyun/tu2-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-3 .item:nth-child(3) .block-item:hover .item-image {
+	background: url(./../images/listenToJianyun/tu3-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-3 .item:nth-child(4) .block-item:hover .item-image {
+	background: url(./../images/listenToJianyun/tu4-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-3 .block-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 10px rgba(0,0,0,.1);
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-3 .block-item:hover .item-t {
+    color: #0E5BDF;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-4 {
+    margin: 3.2vw 0 0;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-4 .item {
+    width: 50%;
+    padding: 0;
+
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-4 .item:nth-child(-n+2) .block-item  {
+    border-bottom: 1px solid rgba(57, 58, 58, 0.2);
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-4 .item:nth-child(2n) .block-item  {
+    border-left: 1px solid rgba(57, 58, 58, 0.2);
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-4 .block-item {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 2vw 2vw 0 12vw;
+    background-color: #F6F8FB;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-4 .block-item .item-c {
+    min-height: 2vw;
+    padding-bottom: 1.8vw;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-4 .block-item:hover {
+    background: #F6F8FB url("./../images/intelligentWriting/block4-bg.png") no-repeat right center / cover;
+}
+.page-listenToJianyun-wrapper .content-wrapper .block-4 .block-item:hover .item-t {
+    color: #DB1717;
+}
