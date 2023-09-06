@@ -5,14 +5,6 @@
 ul,ol,li {
 	list-style: none;
 }
-@font-face {
-  font-family: PingFang Medium;
-  src: url('../../font/PingFang Medium.ttf');
-}
-@font-face {
-  font-family: PingFang Light;
-  src: url('../../font/PingFang Light.ttf');
-}
 .listenToJianyun{
 	background: #f7f7f7;
 }
@@ -55,17 +47,17 @@ ul,ol,li {
 }
 .banner p{
 	width: 52%;
-	font-size: 4.8vw;
+	font-size: 4.1vw;
 	font-family: PingFangSC-Medium;
 	font-weight: 500;
 	color: #FFFFFF;
 }
 .banner ul {
 	display: flex;
-	margin-top: 5.8vw;
+	margin-top: 2.8vw;
 }
 .banner ul li {
-	font-size: 3.7vw;
+	font-size: 3.2vw;
 	font-family: PingFangSC-Light;
 	font-weight: 300;
 	margin-right: 1.5vw;
@@ -144,6 +136,8 @@ ul,ol,li {
 	line-height: 4vw;
 	padding-right: 1.8vw;
 	box-sizing: border-box;
+	transform-origin: left top;
+	    transform: scale(.86,.86);
 }
 .function .item .line{
 	height: 0.2vw;
@@ -293,7 +287,7 @@ ul,ol,li {
 	font-size: 2.6vw;
 	font-family: PingFangSC-Light;
 	font-weight: 300;
-	color: #FFFFFF;
+	color: #a9a9a9;
 	line-height: 4vw;
 	text-align: center;
 	box-sizing: border-box;
@@ -305,9 +299,10 @@ ul,ol,li {
 	font-weight: 500;
 	color: #FFFFFF;
 	margin-bottom: 2.9vw;
+	transform: scale(1,1);
 }
 .contact>div{
-	margin-bottom: 1vw;
+	transform: scale(.9,.9);
 }
 .contact>div.line{
 	height: 1px;
