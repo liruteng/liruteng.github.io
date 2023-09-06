@@ -88,6 +88,7 @@ ul,ol,li {
 	background-size: 100% 100%;
 	display: flex;
 	align-items: center;
+	font-weight: 500;
 }
 .function .item .item-t i {
 	display: inline-block;
@@ -102,13 +103,15 @@ ul,ol,li {
 	display: flex;
 	flex-wrap: wrap;
 	font-size: 2.6vw;
-	font-weight: 300;
 	color: #666666;
 	line-height: 4vw;
 	box-sizing: border-box;
 	padding-left: 5vw;
 	padding-top: 2.4vw;
-	padding-bottom: 2.4vw;
+	padding-bottom: 1vw;
+	transform-origin: left top;
+    transform: scale(.86,.86);
+	width: 115%;
 }
 .function .item .item-c li{
 	min-width: 50%;
@@ -170,7 +173,6 @@ ul,ol,li {
 	width: 115%;
 	font-size: 2.6vw;
 	font-family: PingFang SC;
-	font-weight: 300;
 	color: #666666;
 	line-height: 4vw;
 	margin-top: 2vw;
@@ -212,10 +214,12 @@ ul,ol,li {
 }
 .applicationScenario .item-list .item .item-c{
 	font-size: 2.6vw;
-	font-weight: 300;
 	color: #333333;
 	line-height: 4vw;
 	margin-top: 2vw;
+	transform-origin: left top;
+    transform: scale(.86,.86);
+	width: 115%;
 }
 .applicationScenario .item-list .item:nth-child(2){
 	background: url('../images/4-2.png') no-repeat;
@@ -280,7 +284,6 @@ ul,ol,li {
 	width: 115%;
 	font-size: 2.6vw;
 	font-family: PingFang SC;
-	font-weight: 300;
 	color: #666666;
 	line-height: 4vw;
 	margin-top: 2vw;
