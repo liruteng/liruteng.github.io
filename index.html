@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.parentBox {  
+			  height: 100%;  
+			  background: rgb(31, 31, 31);  
+			  padding: 200px;  
+			}  
+			.parentBox .contantBox {  
+			  width: 200px;  
+			  height: 200px;  
+			  margin: 0px auto;  
+			  position: relative;  
+			}  
+			.parentBox .contantBox .outerBox {  
+			  width: 200px;  
+			  height: 200px;  
+			  margin: 0 auto;  
+			  transform-style: preserve-3d;  
+			  transform: rotateX(-30deg) rotateY(-80deg);  
+			  animation: rotate 10s infinite linear;  
+			}  
+			.parentBox .contantBox .outerBox div {  
+			  position: absolute;  
+			  width: 200px;  
+			  height: 200px;  
+			  opacity: 0.75;  
+			  transition: all 0.4s;  
+			}  
+			.parentBox .contantBox .outerBox div img {  
+			  width: 100%;  
+			  height: 100%;  
+			}  
+			.parentBox .contantBox .outerBox .frontImgBox {  
+			  transform: rotateY(0deg) translateZ(100px);  
+			}  
+			.parentBox .contantBox .outerBox .queenImgBox {  
+			  transform: translateZ(-100px) rotateY(180deg);  
+			}  
+			.parentBox .contantBox .outerBox .liftImgBox {  
+			  transform: rotateY(90deg) translateZ(100px);  
+			}  
+			.parentBox .contantBox .outerBox .rightImgBox {  
+			  transform: rotateY(-90deg) translateZ(100px);  
+			}  
+			.parentBox .contantBox .outerBox .topImgBox {  
+			  transform: rotateX(90deg) translateZ(100px);  
+			}  
+			.parentBox .contantBox .outerBox .bottomImgBox {  
+			  transform: rotateX(-90deg) translateZ(100px);  
+			}  
+			@-webkit-keyframes rotate {  
+			  from {  
+			    transform: rotateX(0deg) rotateY(0deg);  
+			  }  
+			  to {  
+			    transform: rotateX(360deg) rotateY(360deg);  
+			  }  
+			}  
+			@keyframes rotate {  
+			  from {  
+			    transform: rotateX(0deg) rotateY(0deg);  
+			  }  
+			  to {  
+			    transform: rotateX(360deg) rotateY(360deg);  
+			  }  
+			}  
+			.parentBox .contantBox .outerBox p {  
+			  display: block; /* 注意这里你写的 `bloack` 是拼写错误，应该是 `block` */  
+			  width: 100px;  
+			  height: 100px;  
+			  position: absolute;  
+			  top: 50px;  
+			  left: 50px;  
+			}  
+			.parentBox .contantBox .outerBox p img {  
+			  width: 100%;  
+			  height: 100%;  
+			}  
+			.parentBox .contantBox .outerBox .inFrontImgBox {  
+			  transform: rotateY(0deg) translateZ(50px);  
+			}  
+			.parentBox .contantBox .outerBox .inqueenImgBox {  
+			  transform: translateZ(-50px) rotateY(180deg);  
+			}  
+			.parentBox .contantBox .outerBox .inLeftImgBox {  
+			  transform: rotateY(90deg) translateZ(50px);  
+			}  
+			.parentBox .contantBox .outerBox .inRightImgBox {  
+			  transform: rotateY(-90deg) translateZ(50px);  
+			}
+			.parentBox .contantBox .outerBox .inBottomImgBox  {
+			  transform: rotateX(-90deg) translateZ(50px);
+			}
+			.parentBox .contantBox .outerBox .inTopImgBox  {
+			  transform: rotateY(-90deg) translateZ(50px);  
+			}
+			.outerBox:hover {
+			  cursor: pointer;
+			}
+			.outerBox:hover .frontImgBox {
+			  transform: rotateY(0deg) translateZ(200px);
+			}
+			.outerBox:hover .queenImgBox {
+			  transform: translateZ(-200px) rotateY(180deg);
+			}
+			.outerBox:hover .liftImgBox {
+			  transform: rotateY(90deg) translateZ(200px);
+			}
+			.outerBox:hover .rightImgBox {
+			  transform: rotateY(-90deg) translateZ(200px);
+			}
+			.outerBox:hover .topImgBox {
+			  transform: rotateX(90deg) translateZ(200px);
+			}
+			.outerBox:hover .bottomImgBox {
+			  transform: rotateX(-90deg) translateZ(200px);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parentBox">
+		    <div class="contantBox">
+		      <div class="outerBox">
+		        <!--======================= 外部正方体 =======================-->
+		        <!-- 外前图 -->
+		        <div class="frontImgBox"><img src="./1.jpg" /></div>
+		        <!-- 外后图 -->
+		        <div class="queenImgBox"><img src="./1.jpg" /></div>
+		        <!-- 外左图 -->
+		        <div class="liftImgBox"><img src="./1.jpg" /></div>
+		        <!-- 外右图 -->
+		        <div class="rightImgBox"><img src="./1.jpg" /></div>
+		        <!-- 外上图 -->
+		        <div class="topImgBox"><img src="./1.jpg" /></div>
+		        <!-- 外下图 -->
+		        <div class="bottomImgBox"><img src="./1.jpg" /></div>
+		        <!--======================= 内部正方体 =======================-->
+		        <!-- 内前图 -->
+		        <p class="inFrontImgBox"><img src="./2.jpg" /></p>
+		        <!-- 内后图 -->
+		        <p class="inqueenImgBox"><img src="./2.jpg" /></p>
+		        <!-- 内左图 -->
+		        <p class="inLeftImgBox"><img src="./2.jpg" /></p>
+		        <!-- 内右图 -->
+		        <p class="inRightImgBox"><img src="./2.jpg" /></p>
+		        <!-- 内上图 -->
+		        <p class="inTopImgBox"><img src="./2.jpg" /></p>
+		        <!-- 内下图 -->
+		        <p class="inBottomImgBox"><img src="./2.jpg" /></p>
+		      </div>
+		    </div>
+		  </div>
+	</body>
+	<script>
+		
+	</script>
+</html>
